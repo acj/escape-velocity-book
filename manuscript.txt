@@ -351,6 +351,8 @@ Jesse frowned, looking past Sascha at the heavy steel door that stood open.  He 
 
 "Not this time.  I think I know why, too.  Grab your coat.  Let's take a quick walk."
 
+Sascha pulled out his phone, dialled, and told Jill that everything was cool, at least for now.  Then he walked over to the computer terminal, loaded the program that controlled the security for the room, and pushed "Reset".  Immediately, he heard a click and a dull thud from the far end of the office as the door lock engaged.
+
 
 Jesse felt like his legs were made of cement.  Sascha was the fitter man of the two of them, and he was walking at a pace that reflected the speed of his brain at that moment.  They were walking between a line of tall hedges that led from the building where they both worked to the CUNY cafeteria.  "We're not going for lunch," Sascha said.  "We're just going to find a place that's noisy and can give us same privacy."
 
@@ -403,3 +405,34 @@ Jesse's thoughts turned back to the morning.  He had been doing paperwork for th
 "I wish I knew, Jesse.  At the very least, we need to look at the security tapes and figure out who was in your office.  In the meantime, let me make a suggestion.  Grab your papers from 503B and find another office for the week.  I'll take a look at the room assignment chart and see what's available."
 
 Jesse sighed, looking out the window at the growing shadows on the lawn.
+
+				
+Sascha sat next to the security officer, staring at an array of computer monitors.  They had trawled through sixteen hours of closed-circuit TV footage, trying to find evidence that someone had entered Jesse's office.  Luckily for the hunters, there was little traffic on the fifth floor.  Unfortunately, their prey had eluded them up to this point.
+
+"There!" Sascha called out, pointing a finger at labeled with the numeral 8.  "Who is that?"
+
+Jesse stood behind the others, leaning forward and squinting at the grainy screen.  "Oh, that's Tammy from upstairs.  She brings me the documentation on new student cases.  I didn't see her today, though.  What's the timestamp?"
+
+The security officer pushed a few buttons.  "Eleven fifty, sir.  Just before the top floor goes to lunch."
+
+"Just after I fell asleep," Jesse said, sounding sheepish.  Then he suddenly perked up.  "But she would have noticed that the door security was turned off."
+
+"Looks like she keyed in her passcode and opened the door," the officer said.  He rolled the tape forward by a few seconds.  "For a lot of folks it's a rote process.  They know that the numbers open the door, and the details are someone else's problem.  That door should have closed itself when she left, though."
+
+Jesse had a brief flashback to the day when the heavy steel door was installed.  The technicians had pulled three large magnets out of a crate, mounting them inside the door frame.  They had spent several hours installing a new wiring block and upgrading the power supply to the office to support the new equipment.  "Don't pinch your fingers in this one," one of the workers had said with a nasty laugh.
+
+"It's magnetic," Jesse said.  "And I'd bet you anything that it's tied into the security system."
+
+The officer turned to face him, an odd expession on his face.  "They installed a magnetic door for a staff office?  Those are normally reserved for vaults or emergency weapons stores, things that need protection from determined criminals.  A heavy spring would have done just fine."
+
+"I questioned the wisdom at the time, but the higher-ups were convinced that the extra protection was worthwhile," Jesse said.
+
+Sascha heaved a sigh.  "So we know that Tammy was in the office to deliver paperwork and that the security door would have let her in without a passcode.  How long did she stay?"
+
+The security officer rolled the tape forward again.  "Thirteen seconds, sir."
+
+"Barely long enough to install any tracking equipment.  There's no way that she bugged Jesse."  Sascha turned to face Jesse.  "All right, let's think about this.  Did you leave your coat unattended anywhere in the past couple of days?"
+
+Jesse looked toward the ceiling, rolling his mental tape backward and forward.  He had gone on a disastrous date on the previous Friday.  /Never go on a date when you haven't slept in 50 hours/, he concluded.  Over the weekend he had gone to his favorite coffee shop in Queens and had slept through a B-list film that was showing at a local theatre.  He took the bus to Queens each weekday morning and then walked to CUNY.  On this particular morning, he had purchased a copy of the /New York Times/ and read it on the bus.  The bus was crowded and stuffy, so he had taken off his jacket and, out of habit, draped it over his seat.  The newspaper had occupied him until his stop, leaving plenty of time for someone to mess with his jacket.  The collar would have been fully exposed, and the bustle of passengers always left him numb to small amounts of jostling.  "It must have been on the bus this morning," he said finally.  "I was reading about the Fed's latest argument for quantitative easing, and I had thrown my coat over the back of the seat.  There would have been ample time for someone to bug me."
+
+"And ample time for the person to get away unnoticed," Sascha added, sounding momentarily defeated.  "This doesn't bode well.  I had hoped that we would find someone local, someone affiliated with CUNY.  This makes it a much bigger problem, potentially."
