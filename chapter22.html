@@ -1,0 +1,202 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js light">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Chapter 22 - Escape Velocity</title>
+        <!-- Custom HTML head -->
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="icon" href="favicon.svg">
+        <link rel="shortcut icon" href="favicon.png">
+        <link rel="stylesheet" href="css/variables.css">
+        <link rel="stylesheet" href="css/general.css">
+        <link rel="stylesheet" href="css/chrome.css">
+        <link rel="stylesheet" href="css/print.css" media="print">
+        <!-- Fonts -->
+        <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="fonts/fonts.css">
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+    </head>
+    <body>
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded "><a href="title.html"><strong aria-hidden="true">1.</strong> Escape Velocity</a></li><li class="chapter-item expanded "><a href="frontmatter.html"><strong aria-hidden="true">2.</strong> Front matter</a></li><li class="chapter-item expanded "><a href="chapter1.html"><strong aria-hidden="true">3.</strong> Chapter 1</a></li><li class="chapter-item expanded "><a href="chapter2.html"><strong aria-hidden="true">4.</strong> Chapter 2</a></li><li class="chapter-item expanded "><a href="chapter3.html"><strong aria-hidden="true">5.</strong> Chapter 3</a></li><li class="chapter-item expanded "><a href="chapter4.html"><strong aria-hidden="true">6.</strong> Chapter 4</a></li><li class="chapter-item expanded "><a href="chapter5.html"><strong aria-hidden="true">7.</strong> Chapter 5</a></li><li class="chapter-item expanded "><a href="chapter6.html"><strong aria-hidden="true">8.</strong> Chapter 6</a></li><li class="chapter-item expanded "><a href="chapter7.html"><strong aria-hidden="true">9.</strong> Chapter 7</a></li><li class="chapter-item expanded "><a href="chapter8.html"><strong aria-hidden="true">10.</strong> Chapter 8</a></li><li class="chapter-item expanded "><a href="chapter9.html"><strong aria-hidden="true">11.</strong> Chapter 9</a></li><li class="chapter-item expanded "><a href="chapter10.html"><strong aria-hidden="true">12.</strong> Chapter 10</a></li><li class="chapter-item expanded "><a href="chapter11.html"><strong aria-hidden="true">13.</strong> Chapter 11</a></li><li class="chapter-item expanded "><a href="chapter12.html"><strong aria-hidden="true">14.</strong> Chapter 12</a></li><li class="chapter-item expanded "><a href="chapter13.html"><strong aria-hidden="true">15.</strong> Chapter 13</a></li><li class="chapter-item expanded "><a href="chapter14.html"><strong aria-hidden="true">16.</strong> Chapter 14</a></li><li class="chapter-item expanded "><a href="chapter15.html"><strong aria-hidden="true">17.</strong> Chapter 15</a></li><li class="chapter-item expanded "><a href="chapter16.html"><strong aria-hidden="true">18.</strong> Chapter 16</a></li><li class="chapter-item expanded "><a href="chapter17.html"><strong aria-hidden="true">19.</strong> Chapter 17</a></li><li class="chapter-item expanded "><a href="chapter18.html"><strong aria-hidden="true">20.</strong> Chapter 18</a></li><li class="chapter-item expanded "><a href="chapter19.html"><strong aria-hidden="true">21.</strong> Chapter 19</a></li><li class="chapter-item expanded "><a href="chapter20.html"><strong aria-hidden="true">22.</strong> Chapter 20</a></li><li class="chapter-item expanded "><a href="chapter21.html"><strong aria-hidden="true">23.</strong> Chapter 21</a></li><li class="chapter-item expanded "><a href="chapter22.html" class="active"><strong aria-hidden="true">24.</strong> Chapter 22</a></li><li class="chapter-item expanded "><a href="chapter23.html"><strong aria-hidden="true">25.</strong> Chapter 23</a></li><li class="chapter-item expanded "><a href="chapter24.html"><strong aria-hidden="true">26.</strong> Chapter 24</a></li><li class="chapter-item expanded "><a href="chapter25.html"><strong aria-hidden="true">27.</strong> Chapter 25</a></li><li class="chapter-item expanded "><a href="chapter26.html"><strong aria-hidden="true">28.</strong> Chapter 26</a></li><li class="chapter-item expanded "><a href="chapter27.html"><strong aria-hidden="true">29.</strong> Chapter 27</a></li><li class="chapter-item expanded "><a href="chapter28.html"><strong aria-hidden="true">30.</strong> Chapter 28</a></li><li class="chapter-item expanded "><a href="chapter29.html"><strong aria-hidden="true">31.</strong> Chapter 29</a></li><li class="chapter-item expanded "><a href="chapter30.html"><strong aria-hidden="true">32.</strong> Chapter 30</a></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky bordered">
+                    <div class="left-buttons">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light (default)</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">Escape Velocity</h1>
+
+                    <div class="right-buttons">
+                        <a href="print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="chapter-22"><a class="header" href="#chapter-22">Chapter 22</a></h1>
+<p>Jesse felt his phone vibrate in his pocket. He pulled it out and looked at the screen. <em>Car accident?</em>  He felt his adrenaline spike. <em>Not again, not another attack. Not Sascha.</em>  It took three re-readings of the remainder of the message to convince himself that running out the door and into the street wasn't necessary. Everything was all right. <em>Focus</em>.</p>
+<p>He hadn't planned on working with the interviewers by himself. Jesse was the brainy one, cautious and slow when it came to thinking on his feet. He had taken up debate in order to tame his fear of becoming tongue-tied and getting humiliated by someone who was cooler under pressure. It was an irrational fear. Jesse had always done well at speaking engagements, but he struggled to reconcile his thoughtful side that ached for justice and calm rationality in the world with the firy, emotional rhetoric that was sometimes required to knock people off of their cozy ideological perches and secure that justice. Sascha was his front man, the one with the instincts that almost always found the sweet spot in complicated situations. Sascha's dead reckoning had kept him alive in dangerous situations at least twice.</p>
+<p><em>Focus</em>. Jesse closed his eyes, took a cleansing breath, and then looked around the room. Nothing had changed, but his mind was now in detail mode. There was a box on the wall next to the mirror with a set of buttons and two circular dials. He guessed that the box was an intercom that was finely adjustable to provide a specific experience on the far side of the mirror. If they wanted to be quiet and sensitive, or perhaps loud and intimidating, the technology was there. The lights were probably tied into it as well. Maybe even the color of the walls. There were a few plugs below the box that looked like digital video connectors, but Jesse couldn't be sure.</p>
+<p>He let his eyes relax, and the interrogation room came into focus. Every wall looked the same: plain white with a wide black rectangle in the center. There was a small gray square above each of the rectangles. The larger ones were probably mirrors like the one he was peering through, but there was no way to be sure. In the center of the room, the two chairs were set facing each other, angled slightly away from the mirror. Jesse thought that this was probably strategic. Ingo would be expecting the chairs to be set so that the people on the other side of the mirror could see his face. He would probably try to turn that into an advantage, but their unorthodox viewing angle from the side room might provide some surprising benefits.</p>
+<p>Jesse shielded his eyes from the glow of the lights in the interrogation room and tried to see its ceiling. It was an alarmingly tall room. The bright lights dangled on long, dark cables that were flanked by silver chain links. The ceiling itself was flat with no sound-dampeners. It would be a noisy room. That might play into Ingo's sense of his own grandeur, giving him the sense that he was speaking in a large hall. The ceiling was tiled, too. Jesse wondered if the echoes ever really stopped.</p>
+<p>Just as he was studying the door and its hinges, a man came in with a cart piled high with computer monitors and cabling. He grunted a greeting at Jesse and began unloading the gear onto the tables. As he connected power cables and hooked the monitors into the box on the wall, a white picture began to appear on the screens. Once the monitors warmed up, Jesse realized that he was looking at several angles of the interrogation room. He tried to orient himself by comparing the picture on the monitors with the room that he saw through the mirror. <em>It must be the gray squares</em>, he thought. If his reckoning was correct, the third monitor from the left was the one mounted on the opposite wall from where he sat. The camera images were incredibly sharp, but the black rectangle on the screen gave no indication that someone was sitting behind it.</p>
+<p>The man finished his work and left the room, taking the empty cart with him. Jesse watched him leave and then turned back to the monitors. A moment later, Forth walked into the room holding a mobile phone to his head and carrying a stack of folders.</p>
+<p>&quot;--need you to get the signatures for all three,&quot; Forth was saying. &quot;N-No. No. The first way. Yes. All right.&quot;  He smiled at Jesse and set the phone on the table along with the folders.</p>
+<p>&quot;Good to see you again, Mr. Winter. Is Mr. Greene on his way?&quot;</p>
+<p>&quot;Well,&quot; Jesse said, &quot;he's going to be a few minutes. There was a car accident. Everyone is fine, and he's only a few blocks away, but he doesn't want us to wait for him.&quot;</p>
+<p>Forth gritted his teeth and squeezed his eyes closed for a moment. &quot;Ouch. Well, we'll do what we can in the meantime. Are you ready to go on without him?&quot;</p>
+<p>&quot;Yep, I'm ready. Will you be bringing Ingo in soon?&quot;</p>
+<p>&quot;Five minutes. He's being brought into the building as we speak. The hubbub outside slowed the convoy down. You wouldn't think that a washed-up politician turning himself in after getting caught with his hand in Wall Street's cookie jar would bog down every road around NYPD headquarters, but here we are.</p>
+<p>&quot;Anyway, he'll be coming through the door behind one of our officers. There will be another officer following him. Once Ingo is seated—and he'll be in the chair on your left—they'll use a pair of handcuffs with a long chain to attach him to the chair. There's a steel loop on the edge of the chair to keep him from doing anything cute. They'll take the handcuffs off his hands and feet next, and then they'll leave the room.</p>
+<p>&quot;He'll be alone until just before the interview. My suggestion is to take a few minutes and soak up his mood. His mannerisms. His tics. The way his eyes move. This is all Psych 101 bullshit, but it's core content when you're interviewing someone who's combative. Soaking him up before the game starts will get your mind into the hunt.</p>
+<p>&quot;One more thing. We went through the list of questions that you and Sascha put together, and there's some good stuff in there. We'll be mixing those questions in, especially toward the beginning. If you think of any strategies as you listen to his answers, then tell the agent sitting next to you. He has a direct line to me the whole time. I'll be in the room to your right. There will be two other guys in the room across from you. The man who will be in the room with Ingo is named Jack Turnbull. He's with the FBI and does some amazing work. Cool as a cucumber even during these high-profile interrogations. Any questions?&quot;</p>
+<p>&quot;Yeah, two questions if you don't mind.&quot;</p>
+<p>&quot;Fire away.&quot;</p>
+<p>&quot;First: is anything out of bounds during an interrogation like this?  Does he have legal cause to refuse to answer anything?&quot;</p>
+<p>&quot;He can answer anything he likes, but all of it is voluntary. Normally someone like this would have an attorney present to help him decide which questions to ignore, but so far he's flown solo, and he's done pretty well for himself. Even during a criminal investigation like this, he has the right to keep his mouth shut. I'm not sure that he's ever exercised it, though, to tell you the truth.&quot;</p>
+<p>&quot;All right,&quot; Jesse said. &quot;And second, where is the men's room?&quot;  He hoped that he didn't look as sheepish as he felt.</p>
+<p>&quot;Out the door, first room on the left. They're always built close to these rooms. No intermissions, so we have to be fast.&quot;  Forth stood up and smacked Jesse on the shoulder. &quot;Thanks for coming in. I'll catch up with you afterward.&quot;</p>
+<p>As Forth left the room, Jesse wondered how he would react to seeing someone who had bugged him. Identified, isolated, and then <em>attacked</em> him, really. Up to the moment when he was bugged, every problem that Jesse had dealt with in his job had ultimately been a problem for someone else. He wasn't liable for any damages, and in most cases none of the details of the case affected him personally. Even when he traveled to Poland to secure the release of some stranded students, it was all business. The man in the cafe hadn't attacked him, and the students handled their affairs privately after they were back on U.S. soil. It was a job—one that he loved dearly—but just a job.</p>
+<p>This time was different. He had no vendetta against Ingo. Like Jesse, he was doing his job. But when Jesse thought of the big picture, he saw the lines connecting him to Ingo, and Ingo to a group of well-connected men who <em>did</em> have a vendetta. He knew nothing of their motives, but the fact that they were out there, and still protected by a veil of secrecy, was enough to focus Jesse's mind like a laser.</p>
+<p>Suddenly the door to the interrogation room opened, and a uniformed officer backpedaled slowly into view.</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="chapter21.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                            <a rel="next" href="chapter23.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="chapter21.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                    <a rel="next" href="chapter23.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+        <script type="text/javascript">
+            window.playground_copyable = true;
+        </script>
+        <script src="elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="searcher.js" type="text/javascript" charset="utf-8"></script>
+        <script src="clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+    </body>
+</html>

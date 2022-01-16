@@ -1,0 +1,318 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js light">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Chapter 24 - Escape Velocity</title>
+        <!-- Custom HTML head -->
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="icon" href="favicon.svg">
+        <link rel="shortcut icon" href="favicon.png">
+        <link rel="stylesheet" href="css/variables.css">
+        <link rel="stylesheet" href="css/general.css">
+        <link rel="stylesheet" href="css/chrome.css">
+        <link rel="stylesheet" href="css/print.css" media="print">
+        <!-- Fonts -->
+        <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="fonts/fonts.css">
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+    </head>
+    <body>
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded "><a href="title.html"><strong aria-hidden="true">1.</strong> Escape Velocity</a></li><li class="chapter-item expanded "><a href="frontmatter.html"><strong aria-hidden="true">2.</strong> Front matter</a></li><li class="chapter-item expanded "><a href="chapter1.html"><strong aria-hidden="true">3.</strong> Chapter 1</a></li><li class="chapter-item expanded "><a href="chapter2.html"><strong aria-hidden="true">4.</strong> Chapter 2</a></li><li class="chapter-item expanded "><a href="chapter3.html"><strong aria-hidden="true">5.</strong> Chapter 3</a></li><li class="chapter-item expanded "><a href="chapter4.html"><strong aria-hidden="true">6.</strong> Chapter 4</a></li><li class="chapter-item expanded "><a href="chapter5.html"><strong aria-hidden="true">7.</strong> Chapter 5</a></li><li class="chapter-item expanded "><a href="chapter6.html"><strong aria-hidden="true">8.</strong> Chapter 6</a></li><li class="chapter-item expanded "><a href="chapter7.html"><strong aria-hidden="true">9.</strong> Chapter 7</a></li><li class="chapter-item expanded "><a href="chapter8.html"><strong aria-hidden="true">10.</strong> Chapter 8</a></li><li class="chapter-item expanded "><a href="chapter9.html"><strong aria-hidden="true">11.</strong> Chapter 9</a></li><li class="chapter-item expanded "><a href="chapter10.html"><strong aria-hidden="true">12.</strong> Chapter 10</a></li><li class="chapter-item expanded "><a href="chapter11.html"><strong aria-hidden="true">13.</strong> Chapter 11</a></li><li class="chapter-item expanded "><a href="chapter12.html"><strong aria-hidden="true">14.</strong> Chapter 12</a></li><li class="chapter-item expanded "><a href="chapter13.html"><strong aria-hidden="true">15.</strong> Chapter 13</a></li><li class="chapter-item expanded "><a href="chapter14.html"><strong aria-hidden="true">16.</strong> Chapter 14</a></li><li class="chapter-item expanded "><a href="chapter15.html"><strong aria-hidden="true">17.</strong> Chapter 15</a></li><li class="chapter-item expanded "><a href="chapter16.html"><strong aria-hidden="true">18.</strong> Chapter 16</a></li><li class="chapter-item expanded "><a href="chapter17.html"><strong aria-hidden="true">19.</strong> Chapter 17</a></li><li class="chapter-item expanded "><a href="chapter18.html"><strong aria-hidden="true">20.</strong> Chapter 18</a></li><li class="chapter-item expanded "><a href="chapter19.html"><strong aria-hidden="true">21.</strong> Chapter 19</a></li><li class="chapter-item expanded "><a href="chapter20.html"><strong aria-hidden="true">22.</strong> Chapter 20</a></li><li class="chapter-item expanded "><a href="chapter21.html"><strong aria-hidden="true">23.</strong> Chapter 21</a></li><li class="chapter-item expanded "><a href="chapter22.html"><strong aria-hidden="true">24.</strong> Chapter 22</a></li><li class="chapter-item expanded "><a href="chapter23.html"><strong aria-hidden="true">25.</strong> Chapter 23</a></li><li class="chapter-item expanded "><a href="chapter24.html" class="active"><strong aria-hidden="true">26.</strong> Chapter 24</a></li><li class="chapter-item expanded "><a href="chapter25.html"><strong aria-hidden="true">27.</strong> Chapter 25</a></li><li class="chapter-item expanded "><a href="chapter26.html"><strong aria-hidden="true">28.</strong> Chapter 26</a></li><li class="chapter-item expanded "><a href="chapter27.html"><strong aria-hidden="true">29.</strong> Chapter 27</a></li><li class="chapter-item expanded "><a href="chapter28.html"><strong aria-hidden="true">30.</strong> Chapter 28</a></li><li class="chapter-item expanded "><a href="chapter29.html"><strong aria-hidden="true">31.</strong> Chapter 29</a></li><li class="chapter-item expanded "><a href="chapter30.html"><strong aria-hidden="true">32.</strong> Chapter 30</a></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky bordered">
+                    <div class="left-buttons">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light (default)</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">Escape Velocity</h1>
+
+                    <div class="right-buttons">
+                        <a href="print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="chapter-24"><a class="header" href="#chapter-24">Chapter 24</a></h1>
+<p><em>Here we go</em>, Jesse thought. After the first officer, a short man wearing dark pants and a tan polo shirt shuffled through the door. He took short, awkward steps to avoid tripping over the handcuffs around his ankles. This demanded most of his attention, giving Jesse a chance to study him. Ingo wore glasses with large, rounded lenses. His wiry hair was bushier than Jesse remembered, but this was the first time that he had seen Ingo without his trademark top hat. His ears were small in proportion to his round, plump face, and he had long slender fingers.</p>
+<p>Once Ingo reached his chair, he obediently sat down. There was no point for him to raise a fuss here. He held out his hands to the officer who entered first. The second officer attached a set of handcuffs with an elongated chain to Ingo's right leg and the metal loop on the chair. The first officer then pulled a set of keys from his pocket and removed the handcuffs from Ingo's feet first, followed by the set on his hands. Their ritual completed, the officers left the room. Jesse heard the door's heavy lock click through a speaker that was built into the box on the wall. The speaker must have been activated by someone in another room.</p>
+<p>A moment later, another man dressed in a black shirt and black jeans—detective wardrobe—entered the room and sat down at the other table. He greeted Jesse. &quot;I'm Detective Walsh. Thanks for being here. Detective Forth told me that you've been very helpful already.&quot;</p>
+<p>&quot;Pleased to meet you,&quot; Jesse said. &quot;I don't know about helpful, but I'm hoping that we can solve this puzzle together. My ability to sleep at night depends on it.&quot;</p>
+<p>Walsh laughed and leaned back in his seat. &quot;It's great that you've kept a sense of humor. That's key, if you ask me. Even in a sticky spot like this when someone's clearly got your number, you'll be all right if you can mind your head and remember that the justice system works well most of the time. I think you'll see some good work here today.&quot;</p>
+<p>&quot;I already have. Now we need to get some dirt on this guy.&quot;</p>
+<p>The heavy lock in the room clicked again. &quot;Here we go,&quot; Walsh said. He poured two glasses of water, setting one on Jesse's table.</p>
+<p>Ingo turned his head to look at the door. The door opened after a few seconds, and a tall man in a white dress shirt walked across the threshold. Something about him looked distinguished. Jack Turnbull's hair was gray, but in several places there were light brown hairs that betrayed his true color. He was surprisingly thin. Ingo was not a large man either, but Jesse suspected that he could win a fight with his interrogator.</p>
+<p>Turnbull smiled at Ingo. As he came around in front of him, Turnbull stuck out his hand. &quot;Nice to meet you, Mr. Sternoza. My name is Jack. Jack Turnbull.&quot;</p>
+<p>Ingo shook Turnbull's hand. Then he spoke for the first time: &quot;You're taller than I expected.&quot;</p>
+<p>Jesse and Detective Walsh chuckled. Ingo had a raspy voice that reminded Jesse of the voices of Italian mobsters in American movies. His accent was sharply articulated with an unmistakable eastern European flavor. Jesse sometimes struggled to understand the type of accent that Ingo had, but he was confident that this time would be different. There was enough New York English in the mix that Ingo seemed less a foreign student than a child of Hungarian immigrants.</p>
+<p>Turnbull laughed, taking his seat. &quot;Well, now we're the same height,&quot; he said. &quot;I'm all leg.&quot;</p>
+<p>&quot;Are you a runner?&quot; Ingo asked, tilting his head to the right.</p>
+<p>&quot;No, not a runner.&quot;</p>
+<p>&quot;Basketball?&quot;</p>
+<p>&quot;In high school. I still have a hoop at home.&quot;</p>
+<p>&quot;I like the Celtics.&quot;  Ingo let this statement hang in the air for a moment. &quot;Yes,&quot; he went on, &quot;it's difficult to live in New York and be a fan of a team from Boston. I don't put flags on my window.&quot;</p>
+<p>&quot;Even during the playoffs?&quot;</p>
+<p>&quot;Well, during the game I might make an exception.&quot;</p>
+<p>&quot;Did you ever play basketball, Ingo?&quot;</p>
+<p>&quot;Only in the street. I saw Michael Jordan in Budapest once, and he inspired me to come to America. He was speaking about humanitarian work in Africa at a library. Have you seen him speak?&quot;</p>
+<p>&quot;No. Well—sorry. I've seen him speak on television. After basketball games.&quot;</p>
+<p>&quot;Ah. He says nothing useful during those speeches. I think athletes go to school to learn an empty language for press conferences. Lots of words, nice sounding, but nothing is said.&quot;</p>
+<p>&quot;You're right. I think that they waste a lot of time doing those interviews. Fans want to hear their personal thoughts and feelings, but all that they can say is that they need to work harder and move the ball better.&quot;</p>
+<p>&quot;Yes, exactly. I hear more interesting things from the man in the next cell. He tells me about his guitars and the time when he put a stun grenade into a swimming pool.&quot;</p>
+<p>Turnbull laughed again and shifted in his seat. &quot;All right. And what happened afterward?&quot;</p>
+<p>Jesse admired the give and take in the conversation so far. Ingo seemed relaxed, and Turnbull seemed to be encouraging him to talk. He wasn't ostensibly trying to steer the conversation and had let Ingo control the tempo. Turnbull's calm demeanor and easy talking skills were something to behold. Jesse knew that he would be nervous and awkward if he were on the other side of the mirror, but Turnbull made it look so effortless that someone passing by could be forgiven for thinking that it was a friendly interview for a magazine piece.</p>
+<p>So far, Jesse was drawing a blank. He was trying to study Ingo and get his ears fully tuned to his accent. The rasp and sharp articulations in his voice were no problem on their own, but together they created an exotic mix that required a listener's brain to be steeped for a few minutes before it felt natural. The other men in the side rooms were probably doing the same thing. The first few minutes of any interview or interrogation were key to setting the mood, and this one, despite being a criminal interrogation, was designed to be open and free-flowing. Ingo was a special case that called for special tactics. The detectives had made that fact painfully clear.</p>
+<p><em>But what does it really mean?</em> Jesse wondered to himself. <em>If Ingo is so smart, then wouldn't he know that they're trying to play him into giving himself away?  Wouldn't he see through that?</em></p>
+<p>Ingo grinned. His teeth were small but very neat and white. There were no dimples on his cheeks. &quot;The pool filled with a dark green substance. There was some movement in the water after the explosion, but not as much as he wanted. The experiment was a failure and he had to clean the pool. His dog wouldn't go near it. But it gives me a good story to tell.&quot;</p>
+<p>&quot;It certainly does,&quot; Turnbull said. He smiled, pausing to allow Ingo to continue if he wished</p>
+<p>&quot;So I was thinking,&quot; Ingo began. He looked slowly around the room as he spoke, pausing as he looked at each of the mirrors. &quot;How long will you keep holding me?  The food at the prison is bad, and the men are dull. Are you going to ask me real questions this time so that I can go back to my life?&quot;</p>
+<p><em>Interesting</em>, Jesse thought. <em>Doesn't he realize that they often learn useful things from the non-real questions in the initial interrogations?</em></p>
+<p>&quot;Soon enough, Ingo,&quot; Turnbull said. &quot;We won't keep you any longer than we need to. Are you ready to start with the questions?&quot;</p>
+<p>&quot;Yes, please do,&quot; Ingo said. He had finished surveying the room and now looked squarely at Turnbull.</p>
+<p>&quot;All right. You mentioned before that you like history and politics. Is that right?&quot;</p>
+<p>&quot;Of course.&quot;</p>
+<p>&quot;Okay. Is there a particular political theme, or maybe a time in history, that interests you the most?&quot;</p>
+<p>&quot;Really, Mr. Turnbull, this is not an interesting question. But I do love politics. It has been most interesting to follow the elections here and listen to your politicians play games at your expense. They always say the same things—same as athletes after a game—and you listen to them, expecting a revelation.</p>
+<p>&quot;In Hungary, politicians do not become wealthy when they are in public office. They cannot. This is true in many European countries. One does not need to be rich to become elected, and one cannot become rich after election. Business does not corrupt politics with too much money. If someone is elected, he wants to serve Hungary. Someone said that nobody who wants to be president should become president.&quot;</p>
+<p>&quot;Douglas Adams,&quot; Turnbull said with a shadow of a grin on his face. Jesse smiled more broadly.</p>
+<p>&quot;Bless that man,&quot; Walsh said quietly, glancing at Jesse.</p>
+<p>&quot;Yes, he is the one,&quot; Ingo said. &quot;He is right, but only in systems like yours. If you remove the money, then you solve many of your problems. In Europe we have known this for some time.&quot;</p>
+<p>&quot;Is the same true in Poland?&quot; Turnbull asked.</p>
+<p><em>Subtle</em>, Jesse thought, <em>but a little sharp. Come on, take the bait...</em></p>
+<p>Ingo frowned and glanced at the ceiling. &quot;Poland is an interesting case. I know many politicians from Poland, and they play two games. There is little money in politics for them, but their offices are very well connected. The parties have been involved in many businesses since two centuries ago, and each new politician who is elected is asked to grow the businesses and create new wealth for them. Many of them look to other countries for this. Sometimes it is not proper.&quot;</p>
+<p>Walsh began to write on his notepad. Jesse sensed that the conversation was going well. He wanted to generate some ideas for the detectives, but he was content simply to go along for the ride.</p>
+<p>&quot;Not proper?&quot; Turnbull asked.</p>
+<p>&quot;Yes, they take bribes and favors from foreign businessmen in exchange for favorable treatment for companies. It begins to look like your country. The relationship between the parties and businesses in Poland was good when the leaders knew each other. Everything was local. The world has more people now, and the men only know email addresses. Voices. They never get to shake hands!  What is trust?  Where is trust?  They don't shake hands, and they don't feel remorse when they, ah, <em>burn</em> each other. Stab in the back. They make deals with drug lords in South America. They sell weapons in Russia and south Asia. No remorse.&quot;</p>
+<p>&quot;Do you know of any specific examples of this?&quot;</p>
+<p>&quot;Oh, yes, there are many. The Jasna family is one of the most powerful in Polish politics. They control one of the parties, and it has all of the connections that I mentioned. They are dangerous. The party is popular because they are careful to isolate their business ventures from their voters. The international connections make this easy. They invest money through legal, hidden channels to the third world, and they receive their dividends indirectly. This is very hard to trace. Their voters are happy because the party has the resources and leverage to make things happen, and the party is happy because it is a fat cat that makes its members wealthy.&quot;</p>
+<p>Jesse sat frozen in place. He had been ready to take notes on this part of the conversation, but his brain had gone numb. Poland. Jasna family. International connections. It was not a coincidence that he had heard those concepts in the same breath before. He had met with Marcel Jasna in Warsaw when he helped to bail out the students who bugged a political office. Jesse hadn't known the relationship between Marcel and the rest of the party, but he suspected that it was a close one. He had clearly underestimated how close.</p>
+<p>Turning his head toward Walsh, Jesse finally managed to say, &quot;I think we need to stay on this topic.&quot;</p>
+<p>Walsh raised his eyebrows. &quot;Oh?  You've heard of the guys he's talking about?&quot;</p>
+<p>&quot;I've met one of them, and the guy might have a reason to track me down,&quot; Jesse said. He swallowed uneasily. &quot;He might be carrying a grudge.&quot;  _He might try to have me killed.</p>
+<p>&quot;Let's relay that to the boss. He'll be glad to know that we're getting somewhere.&quot;</p>
+<p>Walsh touched a button on the wall-mounted box and spoke into the air: &quot;Boss, we need to push on this. Winter says he's heard of the Jasnas and met one of them. Might have a motive.&quot;</p>
+<p>The disembodied but unmistakable voice of Detective Forth came back almost immediately. &quot;Ten-four. Is there a person of interest?&quot;</p>
+<p>&quot;Marcel,&quot; Jesse said immediately, and Walsh relayed the message.</p>
+<p>The box was quiet. &quot;Will we need to wait until Turnbull takes a break?&quot; Jesse asked, a little worried that they would lose the thread before the message made its way into the interrogation room.</p>
+<p>&quot;Nope,&quot; Walsh said. &quot;Turnbull has a tiny earpiece that Ingo can't see. I'm sure he already knows the scoop.&quot;</p>
+<p>Ingo was still talking. &quot;They have all become obsessed with their story. The family has done nothing for two generations, but they act like kings. It makes me wish for a new party, but it is not my country. They are entrenched, and it will be very difficult for reform to come to Poland.&quot;</p>
+<p>&quot;I'm wondering, Ingo,&quot; Turnbull said. &quot;Do you know anything about Marcel Jasna?&quot;</p>
+<p>Ingo looked at Turnbull for a moment, clearly trying to work out how Turnbull was interested in a specific foreign political figure. &quot;Yes, he is very interested in you,&quot; he said, pausing meaningfully. &quot;In all of you.&quot;  He looked around the room at each of the black mirrors.</p>
+<p>The room went quiet for a moment, and Jesse was suddenly uncomfortable. It was unlikely that Ingo knew that he was nearby. Forth had promised to keep Jesse's presence secret, both to ensure the integrity of the interrogation and to keep Jesse from being even more tangled up in the case. But the fact that Ingo was playing to the camera also suggested that he was aware of the circumstances and might not be interested in breezily discussing his conquests and personal political flavor for very long. For a while, though, he had been on a roll. If he was aware of what the detectives wanted to learn from him, then he didn't let it show. Jesse hoped that Turnbull would be able to keep Ingo off balance.</p>
+<p>Turnbull tilted his head and frowned. He took a deep breath. &quot;What interest does a Polish political figure have in a few New York City police detectives?&quot;</p>
+<p>&quot;Oh, it is a tired story,&quot; Ingo said. His eyes were downcast for a moment. &quot;You know what happened.&quot;</p>
+<p>&quot;I'm having trouble remembering the details. Was it an immigration dispute?&quot;</p>
+<p>&quot;You could say that. The Jasnas have made many friends. They also have enemies. Most of them are former business partners. People become, umm, disenchanted with the way that the family operates. They do not like their choices. When they leave, the family makes it clear that they must not tell anyone what they have learned. They do not make a threat, but it is understood that the family will protect itself and its secrets. Most people who do not respect their wishes find that their problems in life become larger. Some have become suddently ill and died after they had been very healthy. The family is dangerous. Some lucky people leave the country and avoid the reach of the family, but they hold grudges. Sometimes their children are not able to suppress their feelings. Is this familiar to you now?&quot;</p>
+<p>&quot;It's coming back to me, yes. Please go on.&quot;</p>
+<p>&quot;There was a story in the <em>New York Times</em> some time ago. The author spent a lot of time talking about a City University student who had gone to Poland and tried to spy on some city council members in Warsaw. They were caught and taken to jail. They should have been prosecuted. Under Polish law, they should have stayed in jail for many years. The author of the article had nothing to say about how the spies escaped their crimes.</p>
+<p>&quot;Marcel is my friend. If you are trying to trap him, then you will hear nothing helpful from me. Yes, he is a member of a powerful family that is dirty in business and politics. But he has had no part in that. If there is a member of the family that is true in character, it is Marcel. After those students were allowed to leave Poland, I spoke to him. Marcel was very upset. A man from the City University came to him in Warsaw and begged to let the students go free. He wanted them to face no penalty. To pay no damages. To answer for <em>nothing</em>.&quot;</p>
+<p>Ingo took a deep breath and straightened his posture. He had worked himself into a fury and took a moment to regain his composure.</p>
+<p>&quot;This man from the university was a fraud. He had no interest in justice. He was only interested in making a victory for America and keeping the spy training program at CUNY. It is very unpopular, you know. They teach students how to go into other countries and interfere in their politics, and when the students run into trouble, they send someone to grovel and plead for their release. It is sickening.&quot;</p>
+<p><em>Keep him going</em>, Jesse thought. <em>Spur him just a bit more.</em>  Jesse's blood was boiling, but he had the presence of mind to take the abuse and remember why he was there. They needed to know more about Marcel. Ingo hadn't given them anything but spin.</p>
+<p>&quot;But the students were allowed to leave Warsaw,&quot; Turnbull said. &quot;Why was that?&quot;</p>
+<p>Ingo exhaled forcefully and shook his head. &quot;It makes me sick.&quot;</p>
+<p>&quot;Never seen him worked up like this,&quot; Walsh whispered to Jesse. &quot;The next few minutes should be good.&quot;</p>
+<p>&quot;He threatened them,&quot; Ingo spat. &quot;He threatened them. He said that he had a recording of a conversation from more than twenty years back. The family does not make mistakes. But one of them, Marcel's father, said something during a walk one day that was overheard by an old woman. The woman was from a rival political family, a rival party too, and she made some demands. No one else knows what he said. But this CUNY man, he claimed that he had a recording. A recording of the conversation with the old woman. If Marcel did not let the students go free, then the man was going to publish the recording.</p>
+<p>&quot;I have known Marcel for many years. He is a good friend. He cares for his family. He does not know what happened between his father and the old woman, but he said that it could ruin his family. He knows this because his father spent many years negotiating to keep the conversation a secret. When the woman passed away several years ago, Marcel thought that the problem had gone with her. But now he is not so sure. It has caused him much grief. His father is very troubled by these events. Do you see?  Because of your country's interference, his family cannot have peace.&quot;</p>
+<p>&quot;I'm sorry to hear that. Is he trying to set things right with the woman's family?  Could he find peace that way instead?&quot;</p>
+<p>&quot;No, it is not so simple. When he talks to her family, they snub him. They have become bitter from the many disputes. There will be many years of difficulty ahead for Marcel, and these student spies have ruined any chance at peace. Now he must waste valuable time trying to learn who else knows about his father's conversation and how a record might have been made. If a record exists, then he will find it. I have nothing else to say about this.&quot;</p>
+<p>Jesse wrote furiously on his notepad, trying to put down every lie and detail that Ingo had just shared. Despite the slanderous speech that he had just endured, Jesse felt something like relief. He had a much clearer picture of the plot against him, but everything was still a hunch. Marcel wanted to destroy any copies of his father's dirty laundry, and he was willing to break the law to do so. The cafe chat in Warsaw had left a bitter taste in his mouth, and it was time to take care of business.</p>
+<p>Just as Turnbull crossed a few lines off on his notepad and began to ask the next question, the box on the wall clicked. It was Forth's voice again. &quot;Winter?  There's someone in room 63 waiting for you. It's urgent. We'll get you caught up on Ingo later on.&quot;</p>
+<p>Jesse was puzzled, but he stood up and collected his notepad. Taking a last drink of water, he gave Walsh a thumbs-up and saw himself out.</p>
+<p>Room 63 was a tiny waiting room near the lobby. Jesse wandered back through the labyrinth of offices and interrogation rooms and eventually found himself in the main hallway. The door to 63 was closed, and there were no windows. He knocked, and Sascha opened the door.</p>
+<p>Jesse had known Sascha for years, but he had never seen the face that was staring back at him. Sascha looked <em>amped</em>. He was ready to fight, and Jesse didn't know whether to turn on his heel and flee or be comforted that his partner in crime had made it out of the jungle alive. He sensed that there was a good story in store for him if he stayed, and at any rate his feet refused to move.</p>
+<p>Sascha grabbed Jesse by the shoulder and hauled him into the tiny room, heaving the door closed behind him.</p>
+<p>Room 63 was little more than a broom closet. It was about six feet deep and no more than 4 feet wide. A tiny table sat against the far wall, and two chairs sat in the middle distance. Jesse took the chair farthest from the door. Sascha stayed on his feet.</p>
+<p>&quot;Are you all right?&quot; Jesse asked. &quot;You look like you've had a week's worth of caffeine.&quot;</p>
+<p>Sascha didn't take the joke. &quot;The next hit was on both of us,&quot; he said. &quot;They thought that we were going to be in the same car.&quot;</p>
+<p>&quot;Who thought that?&quot;</p>
+<p>&quot;Whoever has been after you. The jackass who rear-ended me today was texting right before the accident.&quot;</p>
+<p>&quot;Big surprise there. What's that got to do with whoever's stalking me?&quot;</p>
+<p>Sascha pulled a few sheets of folded paper from his pocket and handed them to Jesse. &quot;Check those out. The juicy bits are highlighted. It's a copy of the guy's text messages for the past three days. He's been in contact with someone who wanted to follow us. Remember what I told you about the posters around campus that advertise flexible hours and great pay for students?  He was one of their catches.&quot;</p>
+<p>Jesse tried to read the messages and found that he couldn't remember the beginning of each message once he reached the end. He had been in the zone during the interrogation, but the revelations from Ingo and being asked to leave the room to handle an emergency was enough to kill his concentration. He was familiar with the feeling. On the rare occasion when he was able to enter the mental state known as &quot;flow&quot; during his work day, he was unbelievably productive. But the state was fragile. If a thought crept into his mind that he was in flow, or if a co-worker came into the room and talked to him, then it was lost. He had read that life-long meditators had a markedly improved ability to enter flow, but Jesse had never been able to get into the habit. At the moment, he was glad that Sascha was standing next to him, visibly anxious to share his theory about the noose that seemed to be tightening around them both.</p>
+<p>&quot;So they're after both of us now,&quot; he said, struggling to get his mind back into gear. &quot;What does it all mean?&quot;</p>
+<p>Sascha cleared his throat and pounced. &quot;It's still all about <em>you</em>, but they know that we're acquaintances. They were expecting us to be driving to the NYPD together. I don't know how they knew that. It makes me wonder if Ingo has a contact in prison that he's using to funnel information. The prison crew knows that he's a high-value prisoner, and they've been monitoring his mail and phone conversations. There's been nothing useful. The feds have even been watching for familiar codewords and steganographic stuff, but they've come up empty. He's either really good, or he's using a channel that we're not privy to. I'm guessing the latter. He still has quiet moments when he can chat with the other prisoners, and Ingo has been around the New York crime scene for long enough to make some connections. If he found one of them in there and has been able to send messages, then we're at a serious disadvantage. As soon as he gets back to his cell, whoever is after us could know exactly what we've been asking during the interrogations.&quot;</p>
+<p>&quot;Do you think that they could keep him in solitary until we can learn something about what we're up against here?&quot;</p>
+<p>&quot;It's going to be a tough sell with Forth. He knows that Ingo is connected, and that puts us in a nice catch-22. If we cut him off, he'll shut down and feed us bogus information—if he talks at all. His messages to the outside will suddenly stop, and whoever he's talking to will know that something is up. That's bad for you and me. On the other hand, if we let it ride, the guys on the outside will know that we're mining Ingo for gossip. He'd be a fool not to recognize that, especially with the questions that they were planning to ask today. That's bad for all the good guys, and it's pure gold to the outsiders.&quot;</p>
+<p>Sascha withdrew and took a few steps around the room, tapping a finger in his chin and drumming his other hand on his jeans.</p>
+<p>&quot;I think I know what they want,&quot; Jesse said. His voice was low, almost apologetic.</p>
+<p>Sascha stopped and turned toward him. &quot;Say again?&quot;</p>
+<p>&quot;Today in the interrogation. Just a few minutes ago. Ingo let it spill that the guys from Warsaw—you know, from the party with a capital `P'—they want the recording. Remember?&quot;</p>
+<p>Sascha's eyes were distant for a moment. Jesse was ready to relive the interrogation again in order to put them both on the same page, but then Sascha's face cleared. &quot;The old woman. In the street. Nineteen eighties.&quot;</p>
+<p>Jesse nodded. &quot;It's about her,&quot; he said. &quot;When I flew to Warsaw, I told the guy in the cafe that a recording of that conversation still existed.&quot;  He sighed. &quot;It's true. And that guy—his name is Marcel—is a member of the family.&quot;</p>
+<p>Sascha looked at him levelly. &quot;So it's complicated. <em>Real</em> complicated.&quot;</p>
+<p>&quot;Yeah, but I think there's a picture starting to emerge. The rabbit hole goes deeper than we know; I'd bet money on that. But we know of a group of people who feel that they've been wronged. They feel threatened. They have a focal point for that threat—that would be me—and they're starting to dissect my personal and professional web of contacts. I don't think that there's any risk to you or anyone else unless you get in their way. They've been trying to figure me out. To find out where I might hide something that's very important to them. People are really bad at hiding things, and there's no reason for them to think that I'm any different.&quot;</p>
+<p>&quot;Too bad for them. But does this thing really exist?&quot;</p>
+<p>Jesse had been looking at the ground. He glanced up at Sascha and nodded almost imperceptibly. Sascha seemed to take the hint—Jesse was trying to give him deniability, just in case someone happened to be watching or listening.</p>
+<p>Sascha chewed on a fingernail for a moment and paced around the small space again. &quot;There's something else that I haven't told you yet.&quot;</p>
+<p>There was a knock at the door, and both men jumped. &quot;Occupied!&quot; Sascha said, turning halfway around toward the door.</p>
+<p>&quot;Sorry,&quot; a woman's voice said. They heard the diminishing sound of heeled shoes clicking on the tile floor in the hallway.</p>
+<p>&quot;What is this room, anyway?&quot; Jesse asked.</p>
+<p>&quot;It's a room for filling out job applications,&quot; Sascha said with an odd look in his face. &quot;Who would want to work here after getting stuffed into a cigar box like this?&quot;</p>
+<p>&quot;Anyway,&quot; he went on, &quot;there's another wrinkle here, and it's the reason that I asked for a room like this. When the detectives ran the query into the text message records of this guy, they found something odd. We didn't see it on the guy's phone because it was a message that he had deleted. The page that I gave you was printed right off of the phone's SIM card. Someone sent a message to him just after he called to apply for the job listed on the flyer, and it showed up on the records from the phone company.&quot;</p>
+<p>Sascha took out a yellow sheet of paper with perforated strips on the edges. It had been printed on an old dot-matrix printer and was difficult to read, but Jesse was able to make out the body of the message:</p>
+<blockquote>
+<p>Need a quiet visit to an apt. 40 1/2 N Piata. Tues late.</p>
+</blockquote>
+<p><em>North Piata</em>. &quot;That—&quot; Jesse began.</p>
+<p>Sascha nodded and held up a hand. &quot;It's worse than we thought. We need to get you out of here. Sooner rather than later.&quot;</p>
+<p>&quot;But the interrogation isn't done yet. Shouldn't we go back and talk to Forth?  If we don't know how it turns out, then we'll be in the dark once we're out of the building.&quot;</p>
+<p>Jesse dropped his voice to a whisper. &quot;What if I can't go home tonight?&quot; he said. &quot;They have—&quot;  He jerked a finger at the page that he held in his hand. <em>My address.</em>  &quot;There's nowhere safer than this building, and you're talking about leaving without telling anyone?&quot;</p>
+<p>&quot;It's the best thing. If Ingo is channeling information, then it's best if you're gone and nobody knows how to pick up your trail. We'll call them tonight and get the four-one-one. Right now, I need you to tuck that sheet in your waistband and take a few breaths. Get your head back in the game. I know you have a routine for that.&quot;</p>
+<p>Jesse considered him for a long moment. It was starting to sink in that his evening plans were not going to come to fruition. After the interrogation, he was going to visit a restaurant where he had eaten when he first moved to the city. It was a quiet place that served bar food and was in a neighborhood off the beaten path that none of his friends or colleagues had heard of. That would have to wait. Sascha would have a plan, and Jesse knew that his only play was to trust the former Marine's prodigious judgment. <em>He's better half asleep than I've ever been</em>.</p>
+<p>Finally, Jesse nodded his acceptance. &quot;Where are we—&quot; he began, but Sascha cut him off again.</p>
+<p>&quot;Don't. Just come with me. The circus in the lobby is still going on.&quot;</p>
+<p>Jesse tore the scrawled-upon sheets out of his notebook and tucked them safely into his waistband, leaving the notebook on the table. &quot;Crib sheets for the next contestant,&quot; he said with a grin.</p>
+<p>Sascha gave a single nod and opened the door. There was an unusual amount of foot traffic zipping past the open door, and they could hear what sounded like rushing water from beyond the door to the lobby.</p>
+<p>For Jesse, the two minutes that followed were terrifying. He had never liked large crowds, and the throng in the lobby was worse than any English football game that he had seen. Reporters were yelling into their microphones or barking orders at their camera crews. The accused council member's motorcade had pulled up outside the building, making an exit impossible. Jesse stayed close to Sascha, narrowly avoiding being tripped by stray wires and the bodies that were rushing across the crowded room.</p>
+<p>Sascha had realized that there was no hope of making an exit through the front doors and stood on his tip-toes, searching for another door. Suddenly he cut to his right, ducking under a large light and interrupting a live remote feed from the local NBC affiliate. The reporter looked scandalized and tried to grab Jesse's sleeve as he rushed by, but he shook himself free and was back on Sascha's heels before the reporter had regained his composure.</p>
+<p><em>You've got to be kidding me</em>, Jesse thought. Sascha had seen an exit. His instincts weren't bound by the same shackles as Jesse's, and he had spied a large parcel delivery door in the wall of the lobby that was visibly unlocked. The door was tucked behind an unmanned reception desk but was plainly visible. It was normally used for receiving large freight shipments that would not fit through the reinforced front door of the lobby, but it was more than large enough to allow a man to pass through. The large padlock that normally kept opportunistic intruders out of the NYPD office was hanging open on a hook next to the door.</p>
+<p>As they reached the door, Sascha glanced toward the front door. At that moment, the door of a limousine opened on the street, and the noise level more than doubled. Flashbulbs exploded across the chamber, leaving Jesse and Sascha dazed. Sascha pulled the door up on its tracks, grabbed Jesse's arm, and hauled him through the door. As he emerged on the other side, the door slid closed with a metallic bang. A group of puzzled onlookers stared at them. A young Asian man began to fumble with his camera, and Sascha gave Jesse another firm tug to get his feet moving. They were out of sight before the man could take the photo.</p>
+<p>As they walked past the edge of the window into the lobby, Jesse saw Bradley Johnson, Forth's assistant, emerge from the hallway holding the notebook that Jesse had left behind. Johnson looked around, clearly uninterested in the hubbub that filled the lobby. Jesse thought that he saw panic in his eyes as the window passed out of view and Sascha's pace quickened.</p>
+<p>&quot;All right,&quot; Jesse said quietly, &quot;can we talk about where we're going now?&quot;</p>
+<p>&quot;You know, you're not very good at this game,&quot; Sascha said. &quot;At the moment, we need a car. I'll figure out the rest.&quot;</p>
+<p>Jesse looked around, trying to orient himself on the mental map of the city that he had build over the past ten years. There was nothing but restaurants and video rental shops in the blocks around them, but Jesse knew that he had a bad sample. Soaked in anxiety, he could only remember the places that he visited regularly.</p>
+<p>&quot;Any rental places around here?&quot; Sascha asked without turning his head. &quot;Cheap ones with junk cars are what we want.&quot;</p>
+<p>His memory thawed, and Jesse suddenly recalled a pair of shops that were about ten minutes' walk. They were owned by an Italian family that prided themselves on keeping a fleet of older cars on the road. Older didn't mean classic, and it didn't mean pretty, but the family found a rental market that nobody wanted to recognize—people who wanted to stay under the radar.</p>
+<p>Eleven minutes later, they were standing in front of a grubby counter and waiting as an older man with a Cicilian accent poked the keys on a computer keyboard. Sascha had negotiated a cash payment, and a generous tip was enough to secure a free ride out to the rental lot where the cars were kept. It was well outside of the city and would give them a few minutes to sort out their thoughts.</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="chapter23.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                            <a rel="next" href="chapter25.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="chapter23.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                    <a rel="next" href="chapter25.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+        <script type="text/javascript">
+            window.playground_copyable = true;
+        </script>
+        <script src="elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="searcher.js" type="text/javascript" charset="utf-8"></script>
+        <script src="clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+    </body>
+</html>

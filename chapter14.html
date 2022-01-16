@@ -1,0 +1,236 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js light">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Chapter 14 - Escape Velocity</title>
+        <!-- Custom HTML head -->
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="icon" href="favicon.svg">
+        <link rel="shortcut icon" href="favicon.png">
+        <link rel="stylesheet" href="css/variables.css">
+        <link rel="stylesheet" href="css/general.css">
+        <link rel="stylesheet" href="css/chrome.css">
+        <link rel="stylesheet" href="css/print.css" media="print">
+        <!-- Fonts -->
+        <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="fonts/fonts.css">
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+    </head>
+    <body>
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded "><a href="title.html"><strong aria-hidden="true">1.</strong> Escape Velocity</a></li><li class="chapter-item expanded "><a href="frontmatter.html"><strong aria-hidden="true">2.</strong> Front matter</a></li><li class="chapter-item expanded "><a href="chapter1.html"><strong aria-hidden="true">3.</strong> Chapter 1</a></li><li class="chapter-item expanded "><a href="chapter2.html"><strong aria-hidden="true">4.</strong> Chapter 2</a></li><li class="chapter-item expanded "><a href="chapter3.html"><strong aria-hidden="true">5.</strong> Chapter 3</a></li><li class="chapter-item expanded "><a href="chapter4.html"><strong aria-hidden="true">6.</strong> Chapter 4</a></li><li class="chapter-item expanded "><a href="chapter5.html"><strong aria-hidden="true">7.</strong> Chapter 5</a></li><li class="chapter-item expanded "><a href="chapter6.html"><strong aria-hidden="true">8.</strong> Chapter 6</a></li><li class="chapter-item expanded "><a href="chapter7.html"><strong aria-hidden="true">9.</strong> Chapter 7</a></li><li class="chapter-item expanded "><a href="chapter8.html"><strong aria-hidden="true">10.</strong> Chapter 8</a></li><li class="chapter-item expanded "><a href="chapter9.html"><strong aria-hidden="true">11.</strong> Chapter 9</a></li><li class="chapter-item expanded "><a href="chapter10.html"><strong aria-hidden="true">12.</strong> Chapter 10</a></li><li class="chapter-item expanded "><a href="chapter11.html"><strong aria-hidden="true">13.</strong> Chapter 11</a></li><li class="chapter-item expanded "><a href="chapter12.html"><strong aria-hidden="true">14.</strong> Chapter 12</a></li><li class="chapter-item expanded "><a href="chapter13.html"><strong aria-hidden="true">15.</strong> Chapter 13</a></li><li class="chapter-item expanded "><a href="chapter14.html" class="active"><strong aria-hidden="true">16.</strong> Chapter 14</a></li><li class="chapter-item expanded "><a href="chapter15.html"><strong aria-hidden="true">17.</strong> Chapter 15</a></li><li class="chapter-item expanded "><a href="chapter16.html"><strong aria-hidden="true">18.</strong> Chapter 16</a></li><li class="chapter-item expanded "><a href="chapter17.html"><strong aria-hidden="true">19.</strong> Chapter 17</a></li><li class="chapter-item expanded "><a href="chapter18.html"><strong aria-hidden="true">20.</strong> Chapter 18</a></li><li class="chapter-item expanded "><a href="chapter19.html"><strong aria-hidden="true">21.</strong> Chapter 19</a></li><li class="chapter-item expanded "><a href="chapter20.html"><strong aria-hidden="true">22.</strong> Chapter 20</a></li><li class="chapter-item expanded "><a href="chapter21.html"><strong aria-hidden="true">23.</strong> Chapter 21</a></li><li class="chapter-item expanded "><a href="chapter22.html"><strong aria-hidden="true">24.</strong> Chapter 22</a></li><li class="chapter-item expanded "><a href="chapter23.html"><strong aria-hidden="true">25.</strong> Chapter 23</a></li><li class="chapter-item expanded "><a href="chapter24.html"><strong aria-hidden="true">26.</strong> Chapter 24</a></li><li class="chapter-item expanded "><a href="chapter25.html"><strong aria-hidden="true">27.</strong> Chapter 25</a></li><li class="chapter-item expanded "><a href="chapter26.html"><strong aria-hidden="true">28.</strong> Chapter 26</a></li><li class="chapter-item expanded "><a href="chapter27.html"><strong aria-hidden="true">29.</strong> Chapter 27</a></li><li class="chapter-item expanded "><a href="chapter28.html"><strong aria-hidden="true">30.</strong> Chapter 28</a></li><li class="chapter-item expanded "><a href="chapter29.html"><strong aria-hidden="true">31.</strong> Chapter 29</a></li><li class="chapter-item expanded "><a href="chapter30.html"><strong aria-hidden="true">32.</strong> Chapter 30</a></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky bordered">
+                    <div class="left-buttons">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light (default)</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">Escape Velocity</h1>
+
+                    <div class="right-buttons">
+                        <a href="print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="chapter-14"><a class="header" href="#chapter-14">Chapter 14</a></h1>
+<p>Room 290 was cold and clean, a room that was designed either to impress or intimidate. Which effect took precedence depended on the lighting. On this occasion, every light in the room was burning. There were three conference tables arranged in a U-shape, with a single seat placed at the top of the U. There were small drink knapkins laid on the tables in front of each seat, and karafes of fresh water had been deposited at even intervals. Jesse counted ten, maybe fifteen seats. <em>Full tribunal</em>, he thought, still puzzling over the choice of time and location.</p>
+<p>&quot;Mr. Winter, may I take your coat?&quot; a voice said from Jesse's left. He turned, nodding to the well-dressed woman whose face he recognized, though he couldn't place it.</p>
+<p>&quot;Yes, thank you.&quot;  Jesse slid off his overcoat and handed it to the woman.</p>
+<p>&quot;You're welcome,&quot; she said, pulling a hanger from the coat rack on the wall. &quot;I'm Barbara Nash. I'll be the note taker for this meeting.&quot;</p>
+<p>Jesse smiled, trying to hide his anxiety. &quot;I remember you from the Warsaw trial.&quot;</p>
+<p>&quot;With a bit of luck, this meeting will be less stressful than the trial was.&quot;</p>
+<p>&quot;Do you know why this was arranged so hastily?&quot;</p>
+<p>&quot;This is just a preliminary inquiry. It was arranged more than a week ago by the Office of the Ombudsman. Normally the defendant isn't present, but the dean decided that you should be here, in light of the unusual circumstances surrounding the case.&quot;</p>
+<p>&quot;Unusual circumstances?&quot;</p>
+<p>&quot;Yes, the Office of the Ombudsman has requested a closed-door hearing because the charges are being brought against a staff member whose job involves handling sensitive information. This will be the first such trial in university history, Mr. Winter.&quot;</p>
+<p>Jesse was getting annoyed. His work dealt with the same amount of sensitive material as it did during the Warsaw trial, and every Paul and Joe, as well as the press, had been allowed to sit in for that one. As they should have been_, Jesse thought. It worried him that they might try to conduct this trial behind a veil of secrecy. Justice was more honest with a dispassionate audience.</p>
+<p>&quot;I worked on sensitive things before my first trial, Ms. Nash. What's different now?&quot;</p>
+<p>&quot;It will make sense when you're presented with the formal charges, Mr. Winter. Please have a seat.&quot;  Ms. Nash gestured toward the lonely seat at the opening of the tables. From her tone, Jesse inferred that the conversation was over.</p>
+<p>In the ten minutes that followed before others began to flow in, Jesse made up his mind. He was tired of being accused and tired of being singled out. He silently rehearsed two of the best opening statements that he had delivered in his college debate club, warming up his argumentative instincts. If being aggressive lost him his job, then he would pay the price. He would be in touch with his attorney first thing in the morning, but for tonight he was on his own. The arrangement of the room played into his hand, and Jesse was sure that the meeting organizers wouldn't expect that. Far from being a shy animal under the bright lights, Jesse was free to stand up and move around. In his college debates, he frequently made use of the physical space as a persuasive tactic. It made some opponents nervous, and in Oxford-style debates, where the audience chose the winners, it made an emotional connection with the gallery that reliably brought Jesse votes.</p>
+<p>The Ombudsman himself was the first to arrive, taking a brief and disinterested look at Jesse before sitting at the table to his left. Two of the Ombudsman's staff members arrived a moment later, along with a woman whom Jesse recognized as an administrative assistant from upstairs. The dean of Internal Affairs, Sascha's boss, arrived next and took the seat nearest to Jesse at the table on his right. He offered a polite smile before opening a leather binder and looking through some papers.</p>
+<p>A slow but steady stream of people entered over the next few minutes. The next to enter the room was a man in a sharp black suit. He was carrying a stack of folders under one arm and tapping on his smartphone with the opposite hand. He had the distinct air of a lawyer, and Jesse's suspicion was reinforced when a gray-haired man in a polo shirt followed him. <em>A stuffy old philosophy professor</em>, Jesse thought. <em>My accuser</em>. There were only two seats left at the table, and the man fit the bill.</p>
+<p>When everyone was seated, the Ombudsman rose to his feet. &quot;Ladies and gentlemen, thank you for being here. This is a preliminary inquiry in the case being brought against Mr. Jesse Winter by Dr. Sam Malta. Both Mr. Winter and Mr. Malta are present tonight, and we would like to get all of the details out in the open. This needs to be a transparent discussion. If we can't have a rational discussion, then we'll keep doing this until we do. Understood?&quot;</p>
+<p>There were murmors of agreement from each table.</p>
+<p>&quot;Mr. Winter,&quot; the Ombudsman continued, &quot;we can begin with a statement of the charges, if you would like.&quot;</p>
+<p>&quot;Yes, I think we should do that,&quot; Jesse said, his tone suggesting that this was obvious.</p>
+<p>The Ombudsman cleared his throat. &quot;All right, then. Mr. Winter, this is Mr. John Shelby, and he will be representing Professor Malta.&quot;  He gestured first to the man in the sharp suit, then to the gray-haired man that had followed him into the room. Then he nodded to Mr. Shelby and sat down.</p>
+<p>Shelby stood up, absently adjusting his tie. &quot;Thank you, sir.&quot;  He picked up the piece of paper at the top of his stack and propped his reading glasses on the end of his nose. &quot;Mr. Winter, these are the charges. You are accused of destroying university property on two occasions. The first occurred on July 28th of this year. The university-owned materials in question were the records of a student who is enrolled in the investigative journalism program and conducted a study in Venezuela. The second incident occurred on August 4th, also of this year, and involved a set of computer backups that contained the only remaining copy of the student's records after the hard copies were destroyed. You are also accused of espionage with the intent to disclose university documents to foreign entities stemming from your involvement in an investigation of a student doing research in St. Petersburg, Russia.&quot;</p>
+<p>If Jesse's face reflected the state of his mind, then he had a look of disbelief on his face, and his right eyebrow was raised. &quot;This is complete nonsense, Mr. Shelby&quot; he said flatly. &quot;What's the evidence?&quot;</p>
+<p>The lawyer smirked, considering Jesse for a moment before he spoke. &quot;It's more than enough to convict, Mr. Winter. And with a mouth like that, you can be glad that we're not at trial.&quot;</p>
+<p>&quot;Mr. Ombudsman,&quot; Jesse said, &quot;I was told that we would have a transparent discussion. If the evidence isn't discussed, then we will never come to an understanding.&quot;</p>
+<p>The Ombudsman cleared his throat, looking at Mr. Shelby over the top of his reading glasses. &quot;He's right, counselor. You wanted us all to be here for this meeting. You need to play ball.&quot;</p>
+<p>Jesse could tell from the body language among the attendees that nobody was thrilled to see Shelby. Even his client had given him a few sidelong glares that suggested a disagreement over how to proceed. Shelby knew that he had to build a case according to the rules of the courtroom, but Dr. Malta almost certainly had plans to make a larger, more philosophical point.</p>
+<p>Shelby shuffled his papers for a moment, apparently thinking through the evidence that he had collected. &quot;Let's begin with the destruction charges, then. The student records were found in Mr. Winter's waste bin on the day in question. The computer backups were shown by CUNY computer technicians to have been deleted by an account belonging to Mr. Winter.&quot;</p>
+<p>&quot;Do you have anything other than circumstantial evidence, Mr. Shelby?&quot; Jesse said. &quot;So far, this is a weak case. It makes you look like you have a vendetta. My office disposes of records on a continuous basis, and we can't be bothered by someone who wants to dig through our laundry. I can tell you that if the records were in the waste basket, then it was a mistake. They should have been securely destroyed in accordance with our document retention and disposal policy. How will you demonstrate that the records weren't intentionally placed in the trash by someone else?&quot;</p>
+<p>For all Jesse knew, Shelby had never heard of him before this case. There may be no vendetta. University lawyers tended to know each other, though. Even if Shelby had no personal beef with Jesse, one of his colleagues may have had his ear. Jesse's job had given him a nice view of CUNY politics and bureaucracy at work, and he knew that he needed to cover himself.</p>
+<p>&quot;Throwing the conspiracy and vendetta cards awfully early there, Mr. Winter,&quot; Shelby said, his eyebrows dancing as he spoke. &quot;As I said, we have enough evidence to convict. We'll let the judge decide who dropped the records in the trash.&quot;</p>
+<p>The Ombudsman cleared his throat loudly, interrupting the conversation. &quot;Mr. Shelby, let's move on to the second set of charges. We all have other places to be tonight.&quot;</p>
+<p>&quot;Without a doubt, sir,&quot; Shelby said, giving something that resembled a short bow.</p>
+<p><em>Litigious prick</em>, Jesse thought. Judging from the resentful smirk on Barbara Nash's face, Jesse was not the only who was irritated by Shelby's manner.</p>
+<p>&quot;Mr. Winter,&quot; Shelby began, &quot;the evidence against you regarding the charge of espionage with the intent to disclose university documents to foreign entities is as follows. We have a sworn statement from a Hungarian national who claims that he acquired private student records from you. The gentleman was arrested for his role in an armed robbery at the CUNY post office last year. He appears to be an activist who has been in the United States on a student visa for two years. He has supported himself through a series of jobs for a Hungarian political organization that has ties to Hamas and a Mexican drug cartel. Most of the jobs have been illegal.&quot;</p>
+<p>Shelby paused for a moment to take a drink from his glass of water. &quot;The district attorney's office brokered a deal with this guy. If he confessed to the charges against him and gave verifiable information about the jobs that he performed, then his sentence would be reduced. You were mentioned by name in his statement, Mr. Winter.&quot;  He looked directly at Jesse. &quot;He claims that he paid you five thousand dollars to make copies of a student's academic and criminal record.&quot;</p>
+<p>There were soft gasps. Half of the people in the room looked at the Ombudsman. The other half looked at Jesse.</p>
+<p>&quot;Is the university authorized to have copies of criminal records at all?&quot; Barbara Nash asked, sounding shocked.</p>
+<p>The Ombudsman looked down at his notes, contemplating his response.</p>
+<p>&quot;In some circumstances,&quot; Jesse said. Every eye in the room turned toward him as he spoke. The Ombudsman looked up from his notes, looking relieved. &quot;If a student has been convicted of a felony, then we're obligated under federal law to maintain records for that student. If the felony charge is for something that might put students or CUNY employees at risk, then we're obligated to hold a special hearing before the student is admitted. The paperwork is held in the secured vault along with other sensitive records.&quot;</p>
+<p>&quot;Mr. Shelby, is there anything further?&quot; Jesse asked, rising from his chair as asked the question.</p>
+<p>Shelby looked surprised. &quot;No, Mr. Winter. You've been read the charges being brought against you.&quot;</p>
+<p>&quot;If I may, then, Mr. Ombudsman, I would like to make a statement of my own.&quot;</p>
+<p>The Ombudsman nodded, gesturing for him to continue. Shelby took his seat.</p>
+<p>&quot;First, I would like to thank everyone for taking the time to come to this meeting. It isn't easy to put together legal cases. The evidence is often unreliable. Witnesses can lie. Even a perfectly-constructed case can be derailed by politics and other factors. At the very least, we hope to give a fair shake to everyone involved—especially the accused.&quot;</p>
+<p>Jesse took a couple of steps forward, putting himself within the rectangle formed by the tables.</p>
+<p>&quot;I'll admit that I'm not an unbiased party here. But I think that this hearing, and the trial that may follow, is a waste of your time. It's a waste of the university's time and resources. I am aware of the circumstances that made each of the charges possible. The problem is that Mr. Shelby and Mr. Malda are looking for intent where there is none. My office has accidentally thrown away records before, and we have a procedure to deal with it. No documents are allowed to remain in the trash, and each trash bin is checked before it's taken away. All documents that need to be discarded are shredded by a cross-cut shredder and then incinerated. If something managed to make it out of the office intact, then it was an honest, but still unforgivable, mistake. We owe it to our students to protect their personal records. However, it sounds to me as though someone plucked a discarded document from our office and is now trying to argue that we did something horribly wrong.&quot;</p>
+<p>A few heads were nodding, but Jesse knew that he wasn't out of the woods. The second charge worried him. He recalled hearing from a man with a European accent. The man had claimed to be a police officer for the New York Police Department who was working on a case involving a CUNY student. Jesse had followed the proper procedures for sharing information with the police. He had returned the call by looking up the phone number for the NYPD, ignoring the number that the man had provided in his voicemail. This simple check thwarted attempts by some clever individuals to provide a fake phone number. Everything had checked out, and Jesse forwarded the student's records by secure email. If the man had been an imposter, then he was <em>very</em> good—and Jesse had fallen for it.</p>
+<p>Jesse paused for a moment, moving slowly through the space between the tables. He noticed, with some amusement, that Shelby was looking annoyed.</p>
+<p>&quot;Now, regarding the charge of espionage. I remember the phone call from this man. He said that he was a police officer from NYPD who was looking for information about a student. We are required to comply with police requests, and again, we have procedures for this. I followed the protocol. I called the officer back at the official NYPD number, used my judgment, and sent the information that he asked for. You will find no breakdown in the process that was followed. Nor will you find any misconduct. If there was intent to do anything illegal, it was on the part of the gentleman from Hungary. If our processes were defeated by someone who was cleverer than we are, then that's a problem that we need to deal with. Accusing employees of espionage is not the right answer.&quot;</p>
+<p>Jesse nodded to the Ombudsman and returned to his seat. There were fleeting glances between the tables at this point. Jesse knew that he had hit the mark. Even though he couldn't offer any direct evidence for his arguments, he knew that he had sewn just enough doubt to cut the legs from Shelby's case.</p>
+<p>The Ombudsman cleared his throat. &quot;Thank you, Mr. Winter. At this point, I have to recommend that the charges against Mr. Winter be dropped pending a more thorough investigation. &quot;Mr. Shelby, do you have anything further?&quot;</p>
+<p>&quot;No, sir,&quot; Shelby replied. He gave Jesse a sour look. This was not how the meeting was supposed to go.</p>
+<p>&quot;Very well,&quot; the Ombudsman continued. &quot;Mr. Winter, thank you for joining us. I think you will be hearing from us again as we try to get a handle on exactly what is behind these accusations. Everyone else, thank you very much for your time. Meeting adjurned.&quot;</p>
+<p>Jesse stood up, taking a deep breath and turning toward the door. As he began to walk, he felt a soft hand on his arm.</p>
+<p>&quot;Jesse, you don't know the bullet that you just dodged,&quot; Barbara Nash whispered as she fell into step beside him. &quot;Shelby has a reputation for this type of case. The board has been trying to get rid of him for years, but he has some friends in high places.&quot;</p>
+<p>&quot;I don't think I've heard the last word from him,&quot; Jesse said, &quot;but maybe I saved everyone some time in the courtroom.&quot;</p>
+<p>&quot;I think you saved us more than that. Nice work.&quot;  She smiled at him and turned away, heading toward the restroom.</p>
+<p>Noticing that it was after 9 p.m. and Sascha would be gone, Jesse went home. He had learned enough for one night.</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="chapter13.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                            <a rel="next" href="chapter15.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="chapter13.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                    <a rel="next" href="chapter15.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+        <script type="text/javascript">
+            window.playground_copyable = true;
+        </script>
+        <script src="elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="searcher.js" type="text/javascript" charset="utf-8"></script>
+        <script src="clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+    </body>
+</html>

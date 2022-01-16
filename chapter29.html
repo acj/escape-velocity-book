@@ -1,0 +1,215 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js light">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Chapter 29 - Escape Velocity</title>
+        <!-- Custom HTML head -->
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="icon" href="favicon.svg">
+        <link rel="shortcut icon" href="favicon.png">
+        <link rel="stylesheet" href="css/variables.css">
+        <link rel="stylesheet" href="css/general.css">
+        <link rel="stylesheet" href="css/chrome.css">
+        <link rel="stylesheet" href="css/print.css" media="print">
+        <!-- Fonts -->
+        <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="fonts/fonts.css">
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+    </head>
+    <body>
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded "><a href="title.html"><strong aria-hidden="true">1.</strong> Escape Velocity</a></li><li class="chapter-item expanded "><a href="frontmatter.html"><strong aria-hidden="true">2.</strong> Front matter</a></li><li class="chapter-item expanded "><a href="chapter1.html"><strong aria-hidden="true">3.</strong> Chapter 1</a></li><li class="chapter-item expanded "><a href="chapter2.html"><strong aria-hidden="true">4.</strong> Chapter 2</a></li><li class="chapter-item expanded "><a href="chapter3.html"><strong aria-hidden="true">5.</strong> Chapter 3</a></li><li class="chapter-item expanded "><a href="chapter4.html"><strong aria-hidden="true">6.</strong> Chapter 4</a></li><li class="chapter-item expanded "><a href="chapter5.html"><strong aria-hidden="true">7.</strong> Chapter 5</a></li><li class="chapter-item expanded "><a href="chapter6.html"><strong aria-hidden="true">8.</strong> Chapter 6</a></li><li class="chapter-item expanded "><a href="chapter7.html"><strong aria-hidden="true">9.</strong> Chapter 7</a></li><li class="chapter-item expanded "><a href="chapter8.html"><strong aria-hidden="true">10.</strong> Chapter 8</a></li><li class="chapter-item expanded "><a href="chapter9.html"><strong aria-hidden="true">11.</strong> Chapter 9</a></li><li class="chapter-item expanded "><a href="chapter10.html"><strong aria-hidden="true">12.</strong> Chapter 10</a></li><li class="chapter-item expanded "><a href="chapter11.html"><strong aria-hidden="true">13.</strong> Chapter 11</a></li><li class="chapter-item expanded "><a href="chapter12.html"><strong aria-hidden="true">14.</strong> Chapter 12</a></li><li class="chapter-item expanded "><a href="chapter13.html"><strong aria-hidden="true">15.</strong> Chapter 13</a></li><li class="chapter-item expanded "><a href="chapter14.html"><strong aria-hidden="true">16.</strong> Chapter 14</a></li><li class="chapter-item expanded "><a href="chapter15.html"><strong aria-hidden="true">17.</strong> Chapter 15</a></li><li class="chapter-item expanded "><a href="chapter16.html"><strong aria-hidden="true">18.</strong> Chapter 16</a></li><li class="chapter-item expanded "><a href="chapter17.html"><strong aria-hidden="true">19.</strong> Chapter 17</a></li><li class="chapter-item expanded "><a href="chapter18.html"><strong aria-hidden="true">20.</strong> Chapter 18</a></li><li class="chapter-item expanded "><a href="chapter19.html"><strong aria-hidden="true">21.</strong> Chapter 19</a></li><li class="chapter-item expanded "><a href="chapter20.html"><strong aria-hidden="true">22.</strong> Chapter 20</a></li><li class="chapter-item expanded "><a href="chapter21.html"><strong aria-hidden="true">23.</strong> Chapter 21</a></li><li class="chapter-item expanded "><a href="chapter22.html"><strong aria-hidden="true">24.</strong> Chapter 22</a></li><li class="chapter-item expanded "><a href="chapter23.html"><strong aria-hidden="true">25.</strong> Chapter 23</a></li><li class="chapter-item expanded "><a href="chapter24.html"><strong aria-hidden="true">26.</strong> Chapter 24</a></li><li class="chapter-item expanded "><a href="chapter25.html"><strong aria-hidden="true">27.</strong> Chapter 25</a></li><li class="chapter-item expanded "><a href="chapter26.html"><strong aria-hidden="true">28.</strong> Chapter 26</a></li><li class="chapter-item expanded "><a href="chapter27.html"><strong aria-hidden="true">29.</strong> Chapter 27</a></li><li class="chapter-item expanded "><a href="chapter28.html"><strong aria-hidden="true">30.</strong> Chapter 28</a></li><li class="chapter-item expanded "><a href="chapter29.html" class="active"><strong aria-hidden="true">31.</strong> Chapter 29</a></li><li class="chapter-item expanded "><a href="chapter30.html"><strong aria-hidden="true">32.</strong> Chapter 30</a></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky bordered">
+                    <div class="left-buttons">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light (default)</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">Escape Velocity</h1>
+
+                    <div class="right-buttons">
+                        <a href="print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="chapter-29"><a class="header" href="#chapter-29">Chapter 29</a></h1>
+<p>Jesse took his time, pulling one box after another from the shelf and looking through the records. No one was watching over his shoulder, and he had looked through a few extra boxes to burn some time. Occasionally he would pull a folder from a box and leaf through it, just in case one of the men happened to be looking at him. He guessed that the file would be in the next box, but an idea had just occurred to him.</p>
+<p>Jesse glanced around him, ready with the excuse that his neck and shoulders were getting sore. No one challenged him. He noted the location of each of his captors. Two of the men were strolling away from him between two of the great shelving units. Jenna had pulled a file and was looking through it. The third man was studying a chart on the wall that showed the layout of the building. <em>I am the captain of my soul</em>, Jesse thought.</p>
+<p>He turned on his heel, hoping that his first step would find traction. It did, and he propelled himself toward the open door. By the time he reached it, the men had realized what he was doing, and two of them had moved a hand to their right hip. Jesse grabbed the heavy door as he passed it, using its inertia to swing himself around behind it. Planting both his feet and summoning all of his strength, he heaved the door closed. The floor shook beneath his feet as the heavy steel locked into place. Jesse ducked quickly to one side, aware that the glass window in the door might not be bulletproof. He could hear Jenna screaming at her men on the other side of the door.</p>
+<p>Jesse edged himself away from the door until he was safely out of sight, and then he began to walk toward the south elevator. <em>Now what?</em> he thought. There was no courtesy phone on the current floor. He would need to get outside but stay out of sight of Jenna's men in the van. They would be looking for him. Jenna was probably notifying them already.</p>
+<p><em>Oh, shit</em>, he thought. <em>Sascha</em>. Not only would the men be looking for him, but they still had Sascha in the van. If they couldn't find Jesse, they might torture or threaten to kill Sascha in order to get him to disclose the location of the recording.</p>
+<p>Jesse punched the button for the south elevator and glanced back toward the vault. He thought that he heard a beep from the elevator at the other end of the long hallway, but he dismissed it. Seconds later, the elevator door opened. Jesse rushed forward and collided with a man wearing dark clothes. The man put his hands on Jesse's shoulders to steady him and took a step backward. It was Detective Forth.</p>
+<p>&quot;Detective, I—the vault—it—&quot; Jesse stammered.</p>
+<p>&quot;I know,&quot; Forth said. &quot;We knew that something was wrong when your phone was off for so long, and the wreckage in your apartment was a dead giveaway. Show me the vault.&quot;</p>
+<p>Jesse led Forth back down the long hallway to the vault door. Forth glanced inside, ducking back when he saw the men with loaded weapons. He raised an open hand in front of the door for a brief moment, and then began punching buttons on the security keypad.</p>
+<p>&quot;Detective, no!&quot; Jesse shouted. &quot;They'll kill us!&quot;  He backed away, ready to run for the stairwell.</p>
+<p>Forth punched the <code>UNLOCK</code> button and looked sidelong at Jesse. &quot;It's time to face the music, Mr. Winter.&quot;  He pulled the large handle, and the heavy door yawned open again. The red-faced gunmen and Jenna came out, glaring at Jesse. Jenna stepped forward and shoved him. &quot;Did you think that little prank was cute?&quot; she said, hardly interested in an answer. &quot;I'll show you cute.&quot;  She pulled her handgun from its holster and grabbed Jesse by his shirt, pushing him against the wall. She pushed the gun into his cheek, and he could feel the cold steel compressing his nasal cavity. He closed his eyes.</p>
+<p>&quot;Jenna,&quot; Forth said, &quot;we need him alive. Don't make this complicated.&quot;</p>
+<p>&quot;You think this was easy?&quot; she said, turning her head toward Forth. &quot;Getting into the country without getting harassed by your know-nothing agents was hard enough. Getting to this point was hard enough. It's time to end this, and I'll have blood on my hands if that's what it takes to vindicate my family. The people <em>need us</em>. I know my cause.&quot;</p>
+<p>She turned back to Jesse. &quot;All right. Any more bullshit and I'll pull the trigger. Got it?&quot;</p>
+<p>Jesse nodded weakly, his face beginning to burn from the pressure of the gun barrel.</p>
+<p>&quot;Where is the recording?  Is it in this building?&quot;</p>
+<p>&quot;Yes.&quot;</p>
+<p>&quot;Where?&quot;</p>
+<p>&quot;It's—&quot; he faltered.</p>
+<p>She pressed the gun into his face even harder, making the back of his head hurt and the pain in his cheek explode.</p>
+<p>&quot;It's upstairs,&quot; Jesse squeaked. Jenna eased the pressure on the gun, but the pain hardly subsided.</p>
+<p>&quot;Let's go,&quot; she said. &quot;Now. If I see you wasting time, you're dead.&quot;</p>
+<p>She pushed him toward the north elevator, her gun aimed at his back. Jesse walked at a brisk pace toward the closed elevator. He had no idea what time it was, but he couldn't risk any more stalling. If someone was going to save him, then it would happen with the cards that were on the table.</p>
+<p>Jesse punched the button on the elevator and waited for it to arrive. He would be taking them to the Office of Internal Affairs. Sascha's office. He had neven been in there without Sascha, but somehow he knew that his friend wouldn't mind, given the circumstances.</p>
+<p>When the door opened, Jesse stood in shock. There was a muffled metallic sound and a flash of light from the dim elevator, and he heard Jenna grunt behind him. She collapsed in a heap, and her gun slid down the hallway out of reach. He heard movement farther down the hallway, in the direction of the vault. &quot;FREEZE,&quot; he heard a man's voice yell. Jenna's gunmen wheeled around, panic in their eyes.</p>
+<p>Forth, who had been standing on Jesse's right side, made no move. His gun had never been unholstered, and he was in no position to win a draw. Slowly, he raised his hands. Behind them, Jenna was groaning.</p>
+<p>Bradley Johnson stepped out of the elevator along with another man who Jesse didn't recognize. Both were wearing bulletproof vests and carried automatic rifles. &quot;Detective,&quot; Johnson said with a nonchalant air.</p>
+<p>&quot;Johnson,&quot; Forth said. &quot;Web of lies.&quot;</p>
+<p>&quot;Only your own. Get on your knees.&quot;</p>
+<p>Forth sneered and opened his mouth to protest, but Johnson shouldered his weapon. Forth slowly dropped to his knees and put his hands on his head. Johnson nodded to the man beside him. The man moved behind Forth and pulled a pair of heavy handcuffs from his belt. For Jesse, the cuffs made a satisfying series of clicks as they closed around Forth's wrists.</p>
+<p>Jesse remembered that his dear friend was still at the mercy of the goons outside, and his heart nearly stopped. &quot;Sascha—he was in the—&quot; he started.</p>
+<p>Johnson smiled and put a hand on Jesse's shoulder. &quot;He's fine. You can relax now. We knew that we needed to hit these guys first, but we had a backup unit outside to sweep the vehicle. They roughed him up a bit, but he'll be good as new in a few days.&quot;</p>
+<p>Jesse exhaled. The combination of the day's events and his lack of sleep left him wondering when the other shoe would fall. <em>Has to be the fifth shoe by now</em>, he thought.</p>
+<p>Outside, Sascha was sitting in the back of an ambulance. When he saw Jesse, he jumped out of the ambulance and gave him a bear hug.</p>
+<p>&quot;I guess Johnson was right about you,&quot; Jesse said with a laugh. &quot;How bad did they thump you?&quot;</p>
+<p>&quot;Eh, it was nothing I haven't survived before. Those guys were more bored than angry. She didn't pay them enough.&quot;</p>
+<p>Jesse grinned. &quot;Let's get something to eat,&quot; he said. &quot;I have a feeling the feds are going to be processing this one for a while, and I'm not sitting through any more meetings on an empty stomach.&quot;</p>
+<p>&quot;As long as it's not Thai,&quot; Sascha said, screwing up his face. &quot;I can't get the smell of that stuff out of my nose.&quot;</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="chapter28.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                            <a rel="next" href="chapter30.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="chapter28.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                    <a rel="next" href="chapter30.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+        <script type="text/javascript">
+            window.playground_copyable = true;
+        </script>
+        <script src="elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="searcher.js" type="text/javascript" charset="utf-8"></script>
+        <script src="clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+    </body>
+</html>

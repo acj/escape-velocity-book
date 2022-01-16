@@ -1,0 +1,285 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js light">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Chapter 9 - Escape Velocity</title>
+        <!-- Custom HTML head -->
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="icon" href="favicon.svg">
+        <link rel="shortcut icon" href="favicon.png">
+        <link rel="stylesheet" href="css/variables.css">
+        <link rel="stylesheet" href="css/general.css">
+        <link rel="stylesheet" href="css/chrome.css">
+        <link rel="stylesheet" href="css/print.css" media="print">
+        <!-- Fonts -->
+        <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="fonts/fonts.css">
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+    </head>
+    <body>
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded "><a href="title.html"><strong aria-hidden="true">1.</strong> Escape Velocity</a></li><li class="chapter-item expanded "><a href="frontmatter.html"><strong aria-hidden="true">2.</strong> Front matter</a></li><li class="chapter-item expanded "><a href="chapter1.html"><strong aria-hidden="true">3.</strong> Chapter 1</a></li><li class="chapter-item expanded "><a href="chapter2.html"><strong aria-hidden="true">4.</strong> Chapter 2</a></li><li class="chapter-item expanded "><a href="chapter3.html"><strong aria-hidden="true">5.</strong> Chapter 3</a></li><li class="chapter-item expanded "><a href="chapter4.html"><strong aria-hidden="true">6.</strong> Chapter 4</a></li><li class="chapter-item expanded "><a href="chapter5.html"><strong aria-hidden="true">7.</strong> Chapter 5</a></li><li class="chapter-item expanded "><a href="chapter6.html"><strong aria-hidden="true">8.</strong> Chapter 6</a></li><li class="chapter-item expanded "><a href="chapter7.html"><strong aria-hidden="true">9.</strong> Chapter 7</a></li><li class="chapter-item expanded "><a href="chapter8.html"><strong aria-hidden="true">10.</strong> Chapter 8</a></li><li class="chapter-item expanded "><a href="chapter9.html" class="active"><strong aria-hidden="true">11.</strong> Chapter 9</a></li><li class="chapter-item expanded "><a href="chapter10.html"><strong aria-hidden="true">12.</strong> Chapter 10</a></li><li class="chapter-item expanded "><a href="chapter11.html"><strong aria-hidden="true">13.</strong> Chapter 11</a></li><li class="chapter-item expanded "><a href="chapter12.html"><strong aria-hidden="true">14.</strong> Chapter 12</a></li><li class="chapter-item expanded "><a href="chapter13.html"><strong aria-hidden="true">15.</strong> Chapter 13</a></li><li class="chapter-item expanded "><a href="chapter14.html"><strong aria-hidden="true">16.</strong> Chapter 14</a></li><li class="chapter-item expanded "><a href="chapter15.html"><strong aria-hidden="true">17.</strong> Chapter 15</a></li><li class="chapter-item expanded "><a href="chapter16.html"><strong aria-hidden="true">18.</strong> Chapter 16</a></li><li class="chapter-item expanded "><a href="chapter17.html"><strong aria-hidden="true">19.</strong> Chapter 17</a></li><li class="chapter-item expanded "><a href="chapter18.html"><strong aria-hidden="true">20.</strong> Chapter 18</a></li><li class="chapter-item expanded "><a href="chapter19.html"><strong aria-hidden="true">21.</strong> Chapter 19</a></li><li class="chapter-item expanded "><a href="chapter20.html"><strong aria-hidden="true">22.</strong> Chapter 20</a></li><li class="chapter-item expanded "><a href="chapter21.html"><strong aria-hidden="true">23.</strong> Chapter 21</a></li><li class="chapter-item expanded "><a href="chapter22.html"><strong aria-hidden="true">24.</strong> Chapter 22</a></li><li class="chapter-item expanded "><a href="chapter23.html"><strong aria-hidden="true">25.</strong> Chapter 23</a></li><li class="chapter-item expanded "><a href="chapter24.html"><strong aria-hidden="true">26.</strong> Chapter 24</a></li><li class="chapter-item expanded "><a href="chapter25.html"><strong aria-hidden="true">27.</strong> Chapter 25</a></li><li class="chapter-item expanded "><a href="chapter26.html"><strong aria-hidden="true">28.</strong> Chapter 26</a></li><li class="chapter-item expanded "><a href="chapter27.html"><strong aria-hidden="true">29.</strong> Chapter 27</a></li><li class="chapter-item expanded "><a href="chapter28.html"><strong aria-hidden="true">30.</strong> Chapter 28</a></li><li class="chapter-item expanded "><a href="chapter29.html"><strong aria-hidden="true">31.</strong> Chapter 29</a></li><li class="chapter-item expanded "><a href="chapter30.html"><strong aria-hidden="true">32.</strong> Chapter 30</a></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky bordered">
+                    <div class="left-buttons">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light (default)</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">Escape Velocity</h1>
+
+                    <div class="right-buttons">
+                        <a href="print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="chapter-9"><a class="header" href="#chapter-9">Chapter 9</a></h1>
+<p>Sascha sat next to the security officer, staring at an array of computer monitors. They had trawled through sixteen hours of closed-circuit TV footage, trying to find evidence that someone had entered Jesse's office. Luckily for the hunters, there was little traffic on the fifth floor. Unfortunately, their prey had eluded them up to this point.</p>
+<p>&quot;There!&quot; Sascha called out, pointing a finger at a monitor labeled with the numeral 8. &quot;Who is that?&quot;</p>
+<p>Jesse stood behind the others, leaning forward and squinting at the grainy screen. &quot;Oh, that's Tammy from upstairs. She brings me the documentation on new student cases. I didn't see her today, though. What's the timestamp?&quot;</p>
+<p>The security officer pushed a few buttons. &quot;Eleven fifty, sir. Just before the top floor goes to lunch.&quot;</p>
+<p>&quot;Just after I fell asleep,&quot; Jesse said, sounding sheepish. Then he suddenly perked up. &quot;But she would have noticed that the door security was turned off.&quot;</p>
+<p>&quot;Looks like she keyed in her passcode and opened the door,&quot; the officer said. He rolled the tape forward by a few seconds. &quot;For a lot of folks it's a rote process. They know that the numbers open the door, and the details are someone else's problem. That door should have closed itself when she left, though.&quot;</p>
+<p>Jesse had a brief flashback to the day when the heavy steel door was installed. The technicians had pulled three large magnets out of a crate, mounting them inside the door frame. They had spent several hours installing a new wiring block and upgrading the power supply to the office to support the new equipment. &quot;Don't pinch your fingers in this one,&quot; one of the workers had said with a nasty laugh.</p>
+<p>&quot;It's magnetic,&quot; Jesse said. &quot;And I'd bet you anything that it's tied into the security system.&quot;</p>
+<p>The officer turned to face him, an odd expession on his face. &quot;They installed a magnetic door for a staff office?  Those are normally reserved for vaults or emergency weapons stores, things that need protection from determined criminals. A heavy spring would have done just fine.&quot;</p>
+<p>&quot;I questioned the wisdom at the time, but the higher-ups were convinced that the extra protection was worthwhile,&quot; Jesse said.</p>
+<p>Sascha heaved a sigh. &quot;So we know that Tammy was in the office to deliver paperwork and that the security door would have let her in without a passcode. How long did she stay?&quot;</p>
+<p>The security officer rolled the tape forward again. &quot;Thirteen seconds, sir.&quot;</p>
+<p>&quot;Barely long enough to install any tracking equipment. There's no way that she bugged Jesse.&quot;  Sascha turned to face Jesse. &quot;All right, let's think about this. Did you leave your coat unattended anywhere in the past couple of days?&quot;</p>
+<p>Jesse looked toward the ceiling, rolling his mental tape backward and forward. He had gone on a disastrous date on the previous Friday. <em>Never go on a date when you haven't slept in 50 hours</em>, he had concluded. Over the weekend he had gone to his favorite coffee shop in Queens and had slept through a B-list film that was showing at a local theatre. He took the bus to Queens each weekday morning and then walked to CUNY. On this particular morning, he had purchased a copy of the <em>New York Times</em> and read it on the bus. The bus was crowded and stuffy, so he had taken off his jacket and, out of habit, draped it over his seat. The newspaper had occupied him until his stop, leaving plenty of time for someone to mess with his jacket. The collar would have been fully exposed, and the bustle of passengers always left him numb to small amounts of jostling. &quot;It must have been on the bus this morning,&quot; he said finally. &quot;I was reading about the Fed's latest argument for quantitative easing, and I had thrown my coat over the back of the seat. There would have been ample time for someone to bug me.&quot;</p>
+<p>&quot;And ample time for the person to get away unnoticed,&quot; Sascha added, sounding momentarily defeated. &quot;This doesn't bode well. I had hoped that we would find someone local, someone affiliated with CUNY. This makes it a much bigger problem, potentially.&quot;</p>
+<p>&quot;Mr. Winter,&quot; the security officer said, &quot;if you were indeed bugged on the bus, you will need to change your habits. Tracking someone without being noticed is not an easy business, and whoever did this has probably been watching you for a while. You don't need to move house unless you suspect that your safety is at risk, but I suggest that you drive to work for a while, or maybe take a cab. If you routinely go for walks in your neighborhood, be sure to change up your routes.&quot;</p>
+<p>&quot;I think I need to move house,&quot; Jesse said. He was suddenly feeling ill.</p>
+<p>When they left the police station, it was full dark. Nearly nine hours had passed since Sascha found Jesse asleep at his desk, his soft snoring being broadcast somewhere by an electronic bug on his collar. It was unclear who had installed the bug, but the two friends had some idea of when, and where, it had been installed. Unfortunately, there was no video surveillance on city buses, and Jesse had little recollection of anything from the bus ride. Not enough to go on, as the detectives would say.</p>
+<p>Sascha had offered to give Jesse a ride home, saving him the anguish of riding the bus again. They climbed into Sascha's Volkswagon and made their way out of the parking structure.</p>
+<p>&quot;There was one other thing, Jesse,&quot; Sascha said. &quot;Not that you need anything else to think about.&quot;</p>
+<p>&quot;What's that?&quot;</p>
+<p>Sascha turned on his high-beam lights as he turned onto at empty street. &quot;Your name came up on the top feed today. That's why I came down to your office this morning.&quot;</p>
+<p>Jesse looked at Sascha, searching his face for clues about the news that he was about to hear. &quot;Again?!  We haven't even processed any cases lately. How can there be a case against me?&quot;</p>
+<p>&quot;It's still early. The case is being pursued by the Office of the Ombudsman, on behalf of a professor from the Department of Philosophy.&quot;</p>
+<p><em>A philosopher. Great.</em>  &quot;I wish that people would file these cases against the program. I've become the de facto lightning rod, and that's completely outside my job description.&quot;  He heaved a sigh, recalling the time lost and mental anguish of the first trial. &quot;What are the charges?&quot;</p>
+<p>&quot;Espionage and destruction of university property.&quot;</p>
+<p>Jesse felt ill again. He had been cleared of wrongdoing in the first trial brought against him for espionage. There had been no other noteworthy trips or incidents since then, not for Jesse or anyone else affiliated with the investigative journalism program. The most exciting event in months had been Jesse's meeting with the U.S. ambassador to India to discuss possible partnerships with Indian universities. That meeting hadn't even received a writeup in the school newspaper.</p>
+<p>&quot;I think you'll have better support from within CUNY this time,&quot; Sascha said, sensing Jesse's discomfort at the news. &quot;There's a precedent now, and the prosecutor won't be keen on repeating his last performance. And that's assuming it even goes to trial. I haven't heard any of the details or what the evidence is. We'll know more in a few days.&quot;</p>
+<p>The remainder of the ride to Jesse's apartment was silent, punctuated only by the occasional roar of a passing engine and the clicking of the car's turn signal. Jesse thought about his neighborhood. About the walks that he took each morning when he wasn't too exhausted to move. About the lady on the corner whose dog reminded him of Ozzy Osbourne. About the apartment that he had lived in since he moved to New York after college. About the tree in the backyard that would be perfect for a treehouse for his kids someday.</p>
+<p>It wasn't fair that he would need to move, but Jesse never thought that life owed him anything. It's amazing that we're here at all, this species of creative primate. There's no pre-determined order to things. When you mixed together cause, effect, and complexity and unleashed them in a place governed by a set of physical laws, the result was pretty amazing. A place full of turmoil and violence and uncertainty, but also of beauty and wonder and possibility. The world that Jesse lived in was not one to fear, but he recognized that he still needed to protect himself. Sometimes the wolves came to your door, and it wasn't always your fault. It wasn't always your blood that they thirsted after, but the thirst often clouded their judgment. Societies weren't small anymore, and the loosening of bonds between people in the same community made it easier for the wolves to find easy prey. A random guy at a random university who held a low-profile job in an unpopular department wouldn't be missed. It would be an easy meal, and one that would send chilling ripples throughout the program. A message to the young spies in training.</p>
+<p>Jesse thanked Sascha for the lift and walked up to his apartment. He took a survey of the area as he walked and knew that Sascha would be doing the same as he watched Jesse enter the building. All was quiet, and the night air seemed sweet in Jesse's nose. He unlocked his door and went inside, flipping on the lights and dropping his keys on the countertop. He looked around at his kitchen and living room. This had been the eighth apartment that he toured, and it was perfect. It was hard to imagine living anywhere else.</p>
+<p>Jesse pulled his phone book from a drawer in the kitchen and looked at the listings for professional movers. He wrote a few of the names and numbers on a scratch pad and put the book away. It would wait until the morning. He poured himself a glass of milk and sat in his easy chair in the living room. The events of the day had made the whole of his life seem surreal. <em>This morning I was on my way to an ordinary day at work</em>, Jesse thought. <em>Now I'm under investigation for a second time, and someone finds me interesting enough to listen in on my conversations</em>. Having finished his milk, he set the glass on an end table and leaned his head back on the chair, closing his eyes.</p>
+<p>Jesse woke in the morning when his alarm clock began singing and squawking about the day's news. He hadn't moved all night, and his body was quick to inform him that sleeping upright is an acquired habit. His neck and shoulders ached. Jesse stood up and walked to the front door to collect his copy of the <em>New York Times</em> that was delivered each morning at some obscene hour. The day's lead story was about political posturing between the governments of Afghanistan and Pakistan. The investigative journalism program hadn't approved any requests for projects in those two nations because of security concerns, but Jesse knew that there were hundreds of interesting stories to follow. He knew that they would graduate students who would go on to spend their entire careers in that region of the world.</p>
+<p>The kitchen in Jesse's apartment was clean when one considered that a busy bachelor lived there by himself. Two boxes of cereal sat on top of the refrigerator, and the countertop was clean and empty except for a coffee maker, a toaster, and a knife block. A large collection of spices and teas were neatly tucked into a face-height cabinet above the sink. During less busy times at the office, Jesse would be busy preparing a cooked breakfast and steeping a cup of white tea. Today, though, a bowl of cereal would have to suffice.</p>
+<p>After breakfast, Jesse brewed some strong coffee and absently read a few of the headlines in his newspaper. The question of where he would do his work today occupied him like the flames of a roaring fire. Sascha had offered to look at the available rooms, but Jesse thought that it might be wise to go off the grid and choose a place that would be less obvious and predictable. A faculty lounge, or even the student cafeteria, would give a certain amount of peace and would enable Jesse to work incognito. There was always the problem of overly-curious students or faculty looking over his shoulder, but that was a reasonable risk to take given the circumstances. He decided that the student cafeteria would be his new office, and he would find a corner that afforded a good view of his surroundings.</p>
+<p>The next step in the morning ritual was to shower and shave. Jesse enjoyed these two steps more than usual. The full night of quality sleep, his first in over a week, had left him in an upbeat mood. <em>I can handle this. Whatever it is, and whoever it is, I've got this</em>. After getting himself cleaned up, he packed up his laptop computer, mobile phone, and his staff badge. He locked the door and stepped out into the morning air, relieved not to find someone prowling around his apartment. He walked down the wooden stairs that led to a short segment of sidewalk running between a small parking lot and the community garden where Jesse's neighbors grew potatoes, cabbage, and a number of leafy greens.</p>
+<p>Jesse had never been much of a driver, and the morning traffic reminded him why he had always chosen to take the bus. He was on the road at 7:30 a.m., an hour and a quarter before traffic would be at its peak, but it was more than 40 minutes before he arrived at the east parking structure on the CUNY campus. Sascha was the more cautious driver of the two of them -- a fact that always surprised Jesse -- and he had delivered Jesse to his apartment from the same parking structure in eleven minutes flat. This created a complex set of feelings for Jesse on this particular morning, but mostly he was happy to arrive at work without any complications and without any tracking devices in his clothes.</p>
+<p>The morning went by quickly. Jesse had installed himself in a corner of the student cafeteria a few steps from both the men's room and an array of carafes of coffee. He burned through a stack of paperwork that had accumulated the day before. The steady chatter from the cafeteria provided a pleasant din that was as soothing as silence. A few students recognized him from social events that he had chaired over the years, but no one bothered him.</p>
+<p>Jesse was packing up to get some lunch when he noticed a new email in his inbox. The subject heading read, &quot;Fwd: Escalation of service ticket related to door security in the Sheckell Building&quot;. It was from Sascha, but the original author appeared to be an executive at the software firm that was hired to build the CUNY ticket scheduling system. The message had been cryptographically signed and encrypted both by Sascha and the original author, meaning two things. First, the messages were authentic, since only Sascha and the gentleman from the software firm had copies of the keys that were used to sign and encrypt the emails. Likewise, Jesse was the only one with a copy of his own key, meaning that only he could decrypt and read the message that Sascha had forwarded. The second meaning of the signed and encrypted message was that it was important and sensitive.</p>
+<p>PGP, or Pretty Good Privacy, was mainly used by just a few groups: curious computer enthusiasts, privacy wonks, diplomats dealing with sensitive information, and dissidents. When someone wanted to send an electronic message to a contact, there was no guarantee that the message would arrive without being intercepted. Much like tapping a phone line by splicing a few wires, the data that travelled across the internet could be seen by anyone along the path that the data took on its way to its destination. This posed a serious problem for anyone wishing to have a private conversation. In the Middle Ages, kings had solved this problem by inventing shift ciphers. For example, they might rotate each letter one space in the alphabet so that <em>mouse</em> became <em>npvtf</em>. This was effective, but eventually everyone learned the cipher. More sophisticated techniques were developed by mathematicians, especially those who were employed by well-funded militaries.</p>
+<p>When computers arrived on the scene, though, the game changed. A computer could check every popular shift cipher in a matter of microseconds, making it difficult to encrypt messages in a way that ensured their privacy despite the presence of many prying eyes. PGP worked by asking each party in a secure conversation to generate two very long strings of numbers. One was called a <em>private key</em>, and the other a <em>public key</em>. Each person gives everyone else his public key and carefully protects his private key. If Jesse wanted to tell Sascha that lunch would be in the cafeteria on Friday and wanted to be certain that his boss wouldn't read the message, then he would encrypt the message using Sascha's public key. The magic of PGP lies in the next step. Sascha's public and private keys were created as a pair. When Sascha receives a message that was encrypted with his public key, then he uses his private key to decrypt and read it. His private key is the only key in existence that can do so. If Sascha wanted to confirm the information, then he could send a message back to Jesse by encrypting it with Jesse's public key. Since Jesse is the only one with a copy of his private key, he is the only one able to read Sascha's return message.</p>
+<p>Jesse typed in his passcode, unlocking his private key and allowing his email program to decrypt the message.</p>
+<pre><code>-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+Jesse,
+
+It's amazing what you can achieve when
+you put your hand on the center of mass of a
+situation and give it a healthy bodyslam.
+Give this a look.
+
+-- Sascha
+
+&gt; Dear Mr. Greene,
+&gt;
+&gt; Thank you for writing. I am very sorry
+&gt; about the difficulties with the ticket
+&gt; system. It is inexcusable that such a
+&gt; glitch would make it into the production
+&gt; version of this software, and we will be
+&gt; taking immediate steps to fix it and
+&gt; work with you to ensure that the changes
+&gt; are deployed as soon as possible. I
+&gt; will be investigating this matter
+&gt; personally and have launched an internal
+&gt; investigation to determine how the
+&gt; problem evaded the procedures that we
+&gt; use to identify security flaws in our
+&gt; products.
+&gt;
+&gt; I feel it necessary to inform you that
+&gt; we recently terminated an employee's
+&gt; contract because he confessed to
+&gt; installing backdoors in two of our
+&gt; flagship products that are targetted at
+&gt; large corporate clients. CUNY is not
+&gt; in the target audience for those
+&gt; products, and neither of them is
+&gt; deployed at your campus. I believe in
+&gt; transparency even when it is
+&gt; uncomfortable, and I am simply trying
+&gt; to keep you informed as we work our way
+&gt; through the details of this
+&gt; security breach.
+
+&gt; Given the confidential nature of this
+&gt; issue, I expect that you will keep
+&gt; the information in this email, and
+&gt; any subsequent emails, to yourself.
+&gt; If any tampering or foul play is
+&gt; discovered on your end or ours, we
+&gt; will work with you to prosecute the
+&gt; individuals responsible to the fullest
+&gt; extent.
+&gt;
+&gt; Thank you for your business and your
+&gt; cooperation.
+&gt;
+&gt; Sincerely,
+&gt;
+&gt; Theodore R. Ginsburg, Ph. D
+&gt; CSO, Tall Oak Microsystems
+&gt;
+&gt;
+-----END PGP SIGNED MESSAGE-----
+</code></pre>
+<p><em>Sascha, you rabble rouser</em>, Jesse thought. He knew that there was a good story behind this email, but the details could wait. Sascha did his best work when he was forced to make things happen on his own. The slow pace of university politics and decision-making caused Sascha a lot of heartburn, and this was the type of situation that he thrived on. Sascha's boss gave him a lot of latitude in his work, especially in circumstances where the system was failing. With the safety of staff and students on the line, it was almost a blank check. If Sascha needed to go over the heads of I.T., the dean's office, or even the board members, then that's just how things happened. It would wait, though. Jesse had subsisted on coffee since breakfast, and his body was ready to collect on its loan with interest.</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="chapter8.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                            <a rel="next" href="chapter10.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="chapter8.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                    <a rel="next" href="chapter10.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+        <script type="text/javascript">
+            window.playground_copyable = true;
+        </script>
+        <script src="elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="searcher.js" type="text/javascript" charset="utf-8"></script>
+        <script src="clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+    </body>
+</html>

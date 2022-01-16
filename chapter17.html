@@ -1,0 +1,292 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js light">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Chapter 17 - Escape Velocity</title>
+        <!-- Custom HTML head -->
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="icon" href="favicon.svg">
+        <link rel="shortcut icon" href="favicon.png">
+        <link rel="stylesheet" href="css/variables.css">
+        <link rel="stylesheet" href="css/general.css">
+        <link rel="stylesheet" href="css/chrome.css">
+        <link rel="stylesheet" href="css/print.css" media="print">
+        <!-- Fonts -->
+        <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="fonts/fonts.css">
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+    </head>
+    <body>
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded "><a href="title.html"><strong aria-hidden="true">1.</strong> Escape Velocity</a></li><li class="chapter-item expanded "><a href="frontmatter.html"><strong aria-hidden="true">2.</strong> Front matter</a></li><li class="chapter-item expanded "><a href="chapter1.html"><strong aria-hidden="true">3.</strong> Chapter 1</a></li><li class="chapter-item expanded "><a href="chapter2.html"><strong aria-hidden="true">4.</strong> Chapter 2</a></li><li class="chapter-item expanded "><a href="chapter3.html"><strong aria-hidden="true">5.</strong> Chapter 3</a></li><li class="chapter-item expanded "><a href="chapter4.html"><strong aria-hidden="true">6.</strong> Chapter 4</a></li><li class="chapter-item expanded "><a href="chapter5.html"><strong aria-hidden="true">7.</strong> Chapter 5</a></li><li class="chapter-item expanded "><a href="chapter6.html"><strong aria-hidden="true">8.</strong> Chapter 6</a></li><li class="chapter-item expanded "><a href="chapter7.html"><strong aria-hidden="true">9.</strong> Chapter 7</a></li><li class="chapter-item expanded "><a href="chapter8.html"><strong aria-hidden="true">10.</strong> Chapter 8</a></li><li class="chapter-item expanded "><a href="chapter9.html"><strong aria-hidden="true">11.</strong> Chapter 9</a></li><li class="chapter-item expanded "><a href="chapter10.html"><strong aria-hidden="true">12.</strong> Chapter 10</a></li><li class="chapter-item expanded "><a href="chapter11.html"><strong aria-hidden="true">13.</strong> Chapter 11</a></li><li class="chapter-item expanded "><a href="chapter12.html"><strong aria-hidden="true">14.</strong> Chapter 12</a></li><li class="chapter-item expanded "><a href="chapter13.html"><strong aria-hidden="true">15.</strong> Chapter 13</a></li><li class="chapter-item expanded "><a href="chapter14.html"><strong aria-hidden="true">16.</strong> Chapter 14</a></li><li class="chapter-item expanded "><a href="chapter15.html"><strong aria-hidden="true">17.</strong> Chapter 15</a></li><li class="chapter-item expanded "><a href="chapter16.html"><strong aria-hidden="true">18.</strong> Chapter 16</a></li><li class="chapter-item expanded "><a href="chapter17.html" class="active"><strong aria-hidden="true">19.</strong> Chapter 17</a></li><li class="chapter-item expanded "><a href="chapter18.html"><strong aria-hidden="true">20.</strong> Chapter 18</a></li><li class="chapter-item expanded "><a href="chapter19.html"><strong aria-hidden="true">21.</strong> Chapter 19</a></li><li class="chapter-item expanded "><a href="chapter20.html"><strong aria-hidden="true">22.</strong> Chapter 20</a></li><li class="chapter-item expanded "><a href="chapter21.html"><strong aria-hidden="true">23.</strong> Chapter 21</a></li><li class="chapter-item expanded "><a href="chapter22.html"><strong aria-hidden="true">24.</strong> Chapter 22</a></li><li class="chapter-item expanded "><a href="chapter23.html"><strong aria-hidden="true">25.</strong> Chapter 23</a></li><li class="chapter-item expanded "><a href="chapter24.html"><strong aria-hidden="true">26.</strong> Chapter 24</a></li><li class="chapter-item expanded "><a href="chapter25.html"><strong aria-hidden="true">27.</strong> Chapter 25</a></li><li class="chapter-item expanded "><a href="chapter26.html"><strong aria-hidden="true">28.</strong> Chapter 26</a></li><li class="chapter-item expanded "><a href="chapter27.html"><strong aria-hidden="true">29.</strong> Chapter 27</a></li><li class="chapter-item expanded "><a href="chapter28.html"><strong aria-hidden="true">30.</strong> Chapter 28</a></li><li class="chapter-item expanded "><a href="chapter29.html"><strong aria-hidden="true">31.</strong> Chapter 29</a></li><li class="chapter-item expanded "><a href="chapter30.html"><strong aria-hidden="true">32.</strong> Chapter 30</a></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky bordered">
+                    <div class="left-buttons">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light (default)</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">Escape Velocity</h1>
+
+                    <div class="right-buttons">
+                        <a href="print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="chapter-17"><a class="header" href="#chapter-17">Chapter 17</a></h1>
+<p>Jesse kept pace with Sascha on the way to the NYPD more easily than he had a week before. He wasn't waking from deep sleep, for one thing, and Sascha wasn't coming down from a huge dose of adrenaline. As they walked, Jesse's mind began to grapple with the fragments of evidence and information that he had learned in the past few days. He had been punked, although more seriously than in the television show. One of the lead prosecutors for CUNY had decided to pick on him. The prosecutor had made public statement, to no less a source than the <em>New York Times</em>, that he preferred to stay out of the real business of prosecuting confessed criminals. Instead, he was going to find people within CUNY who disagreed with his vision for the world, and he would make it his personal mission to litigate those people into jail time, resignation, or both. If that didn't work, then it seemed that he was willing to plant evidence in order to force the issue. Either way, the guy had a reason to come after Jesse  and anyone he worked with.</p>
+<p>Jesse suddenly emerged from his mental jigsaw puzzle, realizing that Sascha was talking to him.</p>
+<p>&quot;—but really, they should be willing to let us get some tough questions in on this guy. We have a right to know, especially if he broke into your office. We're a directly affected party at that point, and we should be part of any suit that's brought against him.&quot;</p>
+<p>&quot;You mean—oh, oh shit,&quot; Jesse said, his eyes widening. He slowed his pace, tasting the new thought that Sascha had given him. One that he should have realized on his own. &quot;You mean that this guy might have been the one who bugged me?&quot;</p>
+<p>Sascha gave Jesse an odd look. &quot;Yeah, that's exactly what I mean. What?  You didn't make that connection until just now?&quot;</p>
+<p>&quot;I guess not. I was so absorbed in what Shelby said during the meeting last night, and then there was the article in the <em>Times</em>. Wow, I—. But—that should help us to find him, right?  There might be CCTV footage from the bus stop?&quot;</p>
+<p>&quot;Maybe,&quot; Sascha said. They were starting to walk at their original pace again. &quot;This just reinforces the fact that we need to meet this guy face-to-face. You might recognize him, and then we'll have something to build on.&quot;</p>
+<p><em>He'll certainly recognize me</em>, Jesse thought.</p>
+<p>With better coffee in hand, they walked another three-quarters of a mile down the road to the main entrance to NYPD headquarters. They walked through the revolving door, Sascha first, and waited a moment for their eyes to adjust to the lowered lighting. There was a reception station on their right, and a uniformed woman waved them over.</p>
+<p>&quot;Welcome to the NYPD,&quot; the woman said. &quot;May I direct you or call someone for you?&quot;</p>
+<p>&quot;That would be great,&quot; Jesse said, surprising Sascha with his prompt response. &quot;We're from the City University of New York's Office of Internal Affairs, and we would like to talk to someone about an ongoing investigation that might have involved one of our staff members.&quot;</p>
+<p>&quot;Right away, sir. If you don't mind my asking, is it in relation to the case involving the NYU student who was arrested last week?&quot;</p>
+<p>&quot;Yes,&quot; Jesse said. He was surprised by this question, but it saved a lot of awkward explanation.</p>
+<p>&quot;Okay,&quot; the receptionist said. &quot;I'll need to see government-issued identification for each of you—sorry, it's protocol—and then I will get someone out here to talk to you.&quot;</p>
+<p>Jesse and Sascha pulled their driver licenses from their wallets and handed them to the receptionist. She held them under a special light on her desk, apparently checking for a watermark. Satisfied, she handed them back. &quot;Thank you very much,&quot; she said. &quot;I'll have someone come out and get you shortly. In the meantime, please have a seat over by the watercooler.&quot;</p>
+<p>&quot;Okay, thanks,&quot; Jesse said. He followed Sascha over to the set of cushioned blue chairs that flanked the watercooler. There was a middle-aged man reading a novel in one chair, but the rest were empty. They settled in, taking in the rest of the scene.</p>
+<p>&quot;This place isn't at all what I expected,&quot; Sascha said. &quot;It's nothing like a regular police post. With the desks, the computers, the polished floor, it's more like an Apple store. It must be nice to have the resources of a big city PD. This is better than anything that I saw in the Marine Corps.&quot;</p>
+<p>&quot;Where were you stationed, Sascha?&quot; Jesse asked. He had been meaning to ask about Sascha's time in the service for a long time, but the moments when it was appropriate to ask something like that were rare.</p>
+<p>Sascha took a deep breath and tilted his head toward the ceiling before he answered. &quot;Fort Bliss for a while. Texas. I spent a few years in Japan, and then five in Germany. Got to see the east and the west. The east was better. For me, anyway. There was a lot more respect in that part of the world.&quot;</p>
+<p>&quot;For elders?&quot;</p>
+<p>&quot;For everyone, really. There are folks in every country and culture who are disaffected and don't give a hoot about anybody, but the people I met in the east were much more formal. Social situations didn't have the loose, hipster feel that they do here. It was nice. I never got used to the rice, though. I guess I'll always be a western guy when it comes to food.&quot;</p>
+<p>Jesse laughed. &quot;I can't see you eating rice,&quot; he said. &quot;Or steamed veggies and trout, for that matter, but you eat it daily during the summer. We're all complicated critters.&quot;</p>
+<p>&quot;Speaking of complicated critters,&quot; Sascha said under his breath, looking across the room. A man with salt-and-pepper brown hair and thin-rimmed glasses had just come through the door at the back of the room.</p>
+<p>&quot;Greene and Winter?&quot; the man said, looking toward the seating area. The man reading the novel looked up with a hopeful look on his face. As Sascha and Jesse stood up and signaled that they were the party in question, the man sighed and fell back into his book.</p>
+<p>The man who had read their names was wearing a black pair of jeans and a gray dress shirt with the sleeves rolled up neatly to his elbows. He was slightly shorter than Sascha, slightly taller than Jesse, and well built. &quot;Gentlemen,&quot; he said, &quot;I'm detective Allan Forth. How are you doing today?&quot;</p>
+<p>&quot;Fine,&quot; said Jesse and Sascha in unison. They each shook Forth's hand. &quot;We're hoping to talk to you about the case involving the NYU student,&quot; Sascha added.</p>
+<p>&quot;Sure, right this way,&quot; Forth said, gesturing toward the door from which he had emerged a moment earlier.</p>
+<p>They walked down a narrow corridor with offices and conference rooms on either side. Every few steps, Jesse caught a fragment of a different conversation. One was ordering food from a restaurant that served chow mein, another was asking whether someone would be available for a second interview on Friday, and a third was having an intense discussion that was riddled with legal terms. The sound of phones ringing and fingers typing on noisy computer keyboards seemed to pound Jesse's ears from every direction. It reminded him of a casino without the flashing lights, and that wasn't a memory that Jesse wanted to recall.</p>
+<p>They made a right turn, taking them through a quieter hallway that held more conference rooms. The detective stopped at a locked room that was labeled Conference 8N. He pulled a large keyring from his pocket, unlocked the door, and invited them inside. The room was smaller than Jesse expected. It was no larger than an average dorm room. There were four simple chairs, two on either side of a jet-black table that was bolted to the floor. There were two large lamps overhead that were bright enough to remove any chance of a shadow.</p>
+<p>&quot;Please, have a seat,&quot; Forth said, gesturing toward the chairs on his right. He locked the door behind him and checked something on his smartphone before sitting down. &quot;Sorry for the spartan conditions in here. This isn't our most comfortable conference room, but it's by far the most private.&quot;</p>
+<p>Sascha frowned. &quot;Is someone trying to spy on us?&quot; he said with a polite chuckle and a hint of irony.</p>
+<p>&quot;Well, this case has done a real number on us around here,&quot; Forth said, his Brooklyn accent becoming more pronounced. &quot;We should probably start at the beginning, just to be sure that we don't get our signals crossed somehow. What's your interest in the case?&quot;</p>
+<p>Jesse spoke first. &quot;Well, we're staff members at CUNY. Sascha here works in the Office of Internal Affairs. I'm a specialist from the Office of the Ombudsman. Several months ago, we got a request from someone claiming to be an officer from your department. He was interested in the personal and criminal records of a particular CUNY student and had filed an official request for them. The responsibility for fulfilling that request falls to me, so I began the procedure for verifying his credentials and transferring the information. Everything checked out. I called the NYPD number, asked for him by name, and completed the transaction. I didn't notice anything unusual. My instincts tend to work well, and everything seemed kosher.</p>
+<p>&quot;Fast forward to Monday of this week. I was informed by one of the attorneys for CUNY that an NYU student was arrested last week, and he had confessed to impersonating a police officer and explained that he had stolen student records using that false identity. I was the person at the other end of the phone when he called.</p>
+<p>&quot;Now, that by itself might not give me any reason to associate myself with this investigation. It's the next part that gets interesting. Within the last two weeks, the two of us—Sascha and I—discovered an electronic recording device attached to my suit jacket. Thinking back over that day, I think that it was probably attached when I was on a city bus on my way to work. I didn't see or feel it happen, though, and we had no idea who might have seen the need to spy on me. When we heard about this student, though, the pieces started to fall together. He has some connections to groups in Europe that have grievances against CUNY and its investigative journalism program. He has a reason to spy on someone like me, since it's my office that deals with the thorny legal and diplomatic issues that some of our student groups face when they work overseas. We believe that he may have been the one who bugged me. We have no hard evidence for any of this, but since the guy is in custody, we were hoping that your department and ours might be able to help each other out.&quot;</p>
+<p>Jesse looked briefly at Sascha, who quietly nodded his approval.</p>
+<p>Detective Forth shifted in his seat and rested his chin on his hand. &quot;Very interesting. We had known about the stolen CUNY records, but this is the first that I've heard about any involvement with staff members. Has he made any attempts to contact you since he requested those records on your student?&quot;</p>
+<p>&quot;No, not any that I know of. The request seemed open and shut, very run-of-the-mill. Until two days ago.&quot;</p>
+<p>&quot;It's an interesting story, that one. The kid was here to answer some basic questions about a carjacking that happened in his neighborhood. He wasn't involved, but he witnessed the crime and gave us a very detailed description of the thief and the events that unfolded. He has a great memory, and he can be very convincing. No hint of nervousness, anxiety, or self doubt. The officer who was asking him questions stepped out for a moment, assuming that he could be trusted. That's when you talked to him. He had worked out the timing to perfection. We <em>still</em> can't figure out how he got the paperwork that he sent you. Everything was done by the time the officer stepped back in, and to him—as to you—nothing seemed amiss.</p>
+<p>&quot;We'll need you to make a statement for the record, Mr. Winter, just to keep things air-tight. But that doesn't need to happen today. There are a few more details that I think you'll find noteworthy. This guy has made a habit of prowling around universities. He knows how they work. He knows the security routines, the lax judgment, the sluggishness of administation to do anything in a reasonable amount of time, <em>et cetera</em>. They're big, slow moving beasts, and he's someone who knows how to be light on his feet, watching for the right moment to make his move. We suspect that he's defeated the security systems at three schools so far. He's used those skills to change grades, but on one occasion he held a security guard hostage for six hours and forced him to share a bunch of political dirt from closed-door board meetings. How he knew that the guy had been in the meetings is anybody's guess. If there's anything that you've noticed that fits that bill, this would be a good time to share.&quot;</p>
+<p>&quot;We've had a couple of incidents like that,&quot; Sascha said. He glanced at Jesse before continuing. &quot;Most recently, we discovered that our maintenance ticket scheduling system has a security glitch. When a ticket is created and then deleted in just the right way, our door security system doesn't get the memo. It still unlocks the doors during the non-existent repair window. Jesse's office was scheduled for some repairs a couple of weeks ago, but there was no official record of the work to be done. He had been working long hours and fell asleep at his desk for a bit. I had gone down to talk to him around the same time and found him asleep, but the door to the office was ajar. This is a heavy, magnetized door with an alarm that triggers if the door is open for more than a minute. When I woke Jesse, he had no idea that anything had happened.&quot;</p>
+<p>&quot;Until we found the bug on my jacket,&quot; Jesse said, his eyes downcast.</p>
+<p>&quot;Yes,&quot; Forth said, looking distracted for a moment. Then his eyes sharpened again, and he looked back at Jesse. &quot;Let's talk about that. You said that you found an electronic recording device attached to your jacket. What did it look like?  Do you still have it?&quot;</p>
+<p>&quot;No, we don't have it anymore,&quot; Jesse said, stifling a laugh as he recalled the bug's fate in the cafeteria kitchen. &quot;It was made of plastic. Black. Smaller than a dime, but the same circular shape. It was thin like a coin, too. I didn't see any markings on it.&quot;</p>
+<p>Forth took notes on his yellow legal pad as Jesse spoke. &quot;All right,&quot; he said, &quot;and where was it attached to your jacket?&quot;</p>
+<p>&quot;Under the collar. Back side of the neck.&quot;</p>
+<p>Forth stopped writing for a moment as Jesse said this. After resuming and finishing his notes, he sat back in his chair and twirled his pen. &quot;On at least eight occasions,&quot; he said, &quot;this guy has planted bugs on people. All of them have been under the collar.&quot;  He sat motionless for a moment (except for the pen), waiting for Jesse and Sascha to digest this news.</p>
+<p>Jesse looked at Sascha and shook his head in disbelief. Sascha had been right. Again. And Jesse had been distracted by the antics of a university prosecutor, completely disregarding the fact that someone had been spying on him and had been close enough to do him physical harm.</p>
+<p>&quot;That's the main reason why we're here,&quot; Sascha said. &quot;Once the news broke about an NYU student who had stolen records from CUNY and we learned about his other exploits, the story began to make sense. We knew that our chances of understanding the big picture were much better if we talked to the NYPD. We think that Jesse's dealt with some of the student's political contacts in Europe in the past as part of his job, so we might have something to contribute to the investigation.&quot;</p>
+<p>&quot;Can you tell me a bit more about that, Mr. Winter?&quot; Forth asked. &quot;What does your job entail?&quot;</p>
+<p>&quot;Sure,&quot; Jesse said. &quot;CUNY has a well-known investigative journalism program. We teach students how to do the hard work of looking for good, substantive stories, and then we work to improve their interviewing, research, and diplomatic skills. It's worked well so far. We've sent students to 80 countries, and many of them bring back work that's good enough to publish. In many cases, it's also good enough to land them a job at a respected news agency or private investigative firm. As you can imagine, though, their work can lead them into unknown territory. We've had eleven students end up in court as a direct result of their research projects. That's a small percentage, but the cases can be very serious.</p>
+<p>&quot;I hold a special position that deals with the thorny details that our students run into. I do other things as well, but that's how I spend the bulk of my time. I've negotiated on behalf of the students, I've posted bail for them, and I've met with foreign diplomats to arrange for their safe return to the States. It isn't always pretty, but I believe in the mission of the program, and I think we're all better for it.&quot;</p>
+<p>Forth nodded as he took more notes. He was on his fifth page already and would be onto the sixth soon. &quot;I have to agree with you. Off the record, of course. So, I've heard of the program. The mayor's office and the NYPD have received a number of complaints about it, mostly from people who don't understand civics. The rest probably complain directly to CUNY.&quot;</p>
+<p>Sascha laughed. &quot;Yeah, we get our fair share.&quot;</p>
+<p>&quot;It's a normal thing when you're pushing boundaries and trying to root out corruption. A lot of times, it's been going on for decades, and you're just the latest speed bump. Young guys like this end up doing the dirty work. It's good that we caught him when we did, for your sake.&quot;</p>
+<p>&quot;What's he like?&quot; Jesse asked. &quot;Personally, I mean. Have you interviewed him yet?&quot;</p>
+<p>&quot;Yeah, I have,&quot; Forth said, opening a manilla folder and pulling out a batch of papers. &quot;His given name is Ingo, but he goes by Josh when he's in the States. His European friends all call him Ingo, from what we've gathered. He's five foot three and has wiry brown hair. He's crafty, as you already know. Some of our interviewers have gotten into arguments with him and found themselves tangled up in arguments over syllogisms and world history. He's been a tough nut to crack.</p>
+<p>&quot;We've been in touch with Hungarian officials. Ingo went to the University of Budapest and took a degree in political science. Before that, he did his obligatory military service and got special forces training. He specialized, unfortunately for us, as a hostage negotiator and military psychologist.&quot;</p>
+<p>&quot;I've known a few of those,&quot; Sascha said, suddenly looking worried. &quot;They're the type of guys who can convince you that your brown hair is actually blue. That everything you've ever known was a fraud. I'm not surprised that the interviewers have struggled when they sparred with him. Think Hannibal Lecter, but with rifle training and a government sanction to kill or maim when it's expedient.&quot;</p>
+<p>Forth nodded and pursed his lips. &quot;That's the trouble. We've had to call in some expert interviewers, so the case has been held up for a few days. A couple of the guys we requested are from the Navy. They'll be here by Friday.&quot;</p>
+<p>There was a moment of silence as the conversation stalled. Nothing that they had learned so far had been surprising, but Jesse felt much closer to the man who had been spying on him than he had previously. Ingo was probably being held somewhere nearby. By now, he would have worked out how to convince the guards to let him have a pen and paper to work on a novel. They might even give him paperclips, thoroughly convinced that he's being held for some petty crime. Jesse shut it out of his mind.</p>
+<p>Then he had a thought. &quot;Detective, you mentioned earlier that he's bugged a number of people.&quot;</p>
+<p>&quot;Yes, that's right,&quot; Forth said. &quot;At least eight. At least nine, including you.&quot;</p>
+<p>Jesse leaned forward. &quot;Has he told you how he did it?  How he planted the bug, I mean.&quot;</p>
+<p>&quot;He's given us a few details, but I would be interested in hearing your intuition. When were you vulnerable on the day you were bugged, and where do you think it happened?&quot;</p>
+<p>&quot;Well, we checked the surveillance video footage for my building on that day, and the only person who entered my office when the door system was off was an administrative assistant whom I've known for years. She must have seen that I was asleep because she didn't stay more than a few seconds.&quot;</p>
+<p>&quot;And she didn't notice that the door was unlocked?&quot;</p>
+<p>&quot;A lot of our staffers get used to the routine of unlocking the doors. She keyed in her passcode and turned the knob, which would have opened the door on any other day. The keypad doesn't give any audio or visual feedback.&quot;</p>
+<p>&quot;That's a mark against your security contractor, but probably not against the assistant. All right, so she seems an unlikely collaborator. What else?&quot;</p>
+<p>Jesse thought for a moment, recalling the day. &quot;I took the bus to work, like I always do. There was an engrossing economics article in the <em>Times</em>, and I tuned everything out while I read it. My suit jacket was hung over the back of my seat for the whole ride.&quot;</p>
+<p>&quot;How long were you on the bus?&quot;</p>
+<p>&quot;It takes about thirty-five minutes on an average day. I get on around 7:20 a.m., and there's a lot of traffic.&quot;</p>
+<p>&quot;Plenty of time to install a bug,&quot; Forth said, scratching out more notes. &quot;But it doesn't match his style. Ingo likes a challenge, and a sitting target doesn't thrill him. Was there any time when you were walking through town, maybe in a crowd?&quot;</p>
+<p>Jesse's face clouded. He had always worried about someone picking his pocket on the streets of New York. He'd seen it happen to young people, old people, and even children. You had to take precautions. To reduce your attack surface, as the security pros said. After moving to The City, Jesse had begun leaving his wallet at home. He would carry a cash clip deep in his pants pocket and keep his credit cards somewhere else. He never wore expensive rings or watches. The messenger bag that carried his laptop and sensitive documents was always worn so that the strap was over his neck.</p>
+<p>But he hadn't been ready for a bug.</p>
+<p>&quot;I—. Yes,&quot; Jesse said, his voice wavering. I always walk a few blocks from the bus stop to the university. There are a few places where the foot traffic gets heavy in the morning.&quot;</p>
+<p>&quot;I know that it's hard to remember,&quot; Forth said, &quot;but did anyone brush up against you?  Did anyone try to stop you or talk to you?&quot;</p>
+<p>Sascha and Jesse had spent so much time talking about the bus ride that it was difficult for Jesse to remember anything from earlier in the day. He tried to roll his mental tape backwards, to remember anything that stood out. Anything that he could use as a mental foothold. It was a complete blank.</p>
+<p>Forth watched Jesse's face as he tried to remember. &quot;My mother used to say that adrenaline was like sugar,&quot; he said with a chuckle. &quot;One of them spoiled your appetite, and the other spoiled your memory. She had the memory part half right. Adrenaline seems to galvanize your memory of everything after you get the dose, but anything before that is just gone.&quot;</p>
+<p>But Jesse wasn't listening. The word <em>mother</em> had trickled into his mind, and in a flash he saw Bedford Avenue. <em>Escape velocity?  It's too much—</em>. His shoulder ached suddenly. That morning, someone had bumped into him as he waited to approach the Bedford intersection.</p>
+<p>&quot;I know when it was,&quot; he said, looking up at Detective Forth. &quot;That morning, I heard someone say something that reminded me of my mother, of something she used to say all the time. I stopped walking and looked around to see who said it, but she was gone. And then someone ran into me, hard. He apologized and was gone, but that must have been it. That was Ingo.&quot;</p>
+<p>&quot;Possibly,&quot; said Forth. &quot;Do you recall what he looked like?  What he was wearing?&quot;</p>
+<p>&quot;Yeah, but only vaguely. He was short. Dressed in black. And I think that he was wearing an old top hat.&quot;</p>
+<p>Forth took a deep breath and wrote another note on his pad. &quot;Yep. You've met him.&quot;</p>
+<p>Sascha turned to look at Jesse, whose face had flushed. &quot;You never told me about that,&quot; he said.</p>
+<p>&quot;I hadn't thought about it until just now. It was just another bump on the street. It's probably happened hundreds of times since I moved here, and I've never had anything stolen, or....&quot;</p>
+<p>&quot;Gifted?&quot; Forth said, attempting to soften the tension. &quot;We had him demonstrate it on one of our guys here. He's bugged so many people over the years that he can pull it off without giving any hint of danger to his target. Our reflexes that evolved over hundreds of millions of years of avoiding becoming dinner for a lion or being ambushed by other primates don't stand a chance. That's the reason why you didn't think twice when he nudged you. He's good.&quot;</p>
+<p>&quot;After he demonstrated the attack for us,&quot; Forth went on, &quot;he wanted to talk about it. Ingo's crafty, but he's also a talker. He likes to share his big ideas. Each hit goes something like this, with minor variations depending on his mood and the situation at hand. He tracks his target from a range of about fifty feet -- far enough that you'd never notice him, especially on a busy street, but close enough that he can get to you within seconds. This goes on for a while. He's probably been watching you for a few days and knows where you're going. Most people don't change up their routes on a whim. When he's convinced that you're in la-la land, he moves up in the crowd. If anything changes, he falls back and bides his time. If everything looks good, he waits for a moment when you have a bit of space around you. He's right-handed, so it's best if you're on the right side of the sidewalk. Easier to conceal what he's doing.</p>
+<p>&quot;When the critical moment arrives, he lengthens his stride. The bug is in his between the forefinger and thumb in his right hand. It comes with a little delivery mechanism that does some neat tricks. He's walking exactly out of step with you, so that he can put his right foot forward when your left foot is forward. It's all part of the strategy. When he's ready, he slams the heel of his left palm into your left shoulder blade. That doesn't feel nice, and he's counting on the pain as a diversion. Between the time when you feel the pain in your shoulder and when you turn to see who's hit you, he reaches his right hand up toward your neck. The delivery tool has a metal prong jutting from it, and he uses that to flip up your collar. With a gentle squeeze from his fingers, the tool attaches the bug to your jacket the way a stapler binds a staple to paper -- push through, and then snag.</p>
+<p>&quot;After that, it's an apology, a tip of the hat, and you get on with your day. With the pain in your shoulder and the little surprise of his delivering a nice dose of adrenaline, chances are good that you never saw him anyway. It's good that you heard your mother's words just before he hit you, or we might not have made the connection.&quot;</p>
+<p>Jesse nodded, his mind still reeling from Forth's description and what he had just learned about Ingo. &quot;So, if that's all accurate, then what should we do?  What <em>can</em> we do?&quot;</p>
+<p>It was a moment before Forth answered. &quot;I think that his gift of the gab is out best asset,&quot; he said. &quot;He loves to talk about the clever things that he's accomplished. I think his handlers keep a tight lid on him and probably take him for granted. Ingo is just a tool to them. A high-quality tool, to be sure, but at the end of the day he's a cog in a big machine. Traditional psych tricks won't work here. He's too sophisticated for that. But if we can get him talking, then we might be able to learn something about why he was spying on you. If there's a connection to your students, we might learn something about that too. Time will tell.&quot;</p>
+<p>&quot;Seems reasonable,&quot; Sascha said. &quot;What would you like us to do?&quot;</p>
+<p>&quot;If you're available next week,&quot; Forth said, &quot;I'd like you to sit in on the next round of questioning. You'll be on the other side of a one-way mirror, but you might be able to help us tease out some good gossip. If you need a jury summons or some other official paperwork to give to your dean, let me know.&quot;</p>
+<p>&quot;I think the Ombudsman will be plenty interested in this case. We'll take care of it.&quot;</p>
+<p>&quot;Great. You'll hear from me by the end of the week. In the meantime, keep an eye out for spies.&quot;</p>
+<p>Forth stood up, offering his hand to each man across the table. The conversation seemed to have lightened his mood.</p>
+<p>&quot;Thank you very much, detective,&quot; Jesse said. &quot;By the end of this, maybe I'll be able to sleep at night again.&quot;</p>
+<p>Forth laughed. &quot;That's why we're here. Right this way, gentlemen.&quot;  He led them back out to the lobby, asked the receptionist to hold his calls for an hour, and bid Jesse and Sascha farewell.</p>
+<p>&quot;That was an enlightening forty minutes,&quot; Sascha said as he and Jesse walked back toward the CUNY campus. They were walking more slowly than before. Both were digesting the various tidbits that Forth had shared, and neither had said much since they left the NYPD.</p>
+<p>Jesse felt numb. He was grateful for the openness that Forth had displayed, but the weight of the facts had left him feeling vulnerable and bewildered. He tried to think through every case that he had worked on over the past year, willing his memory to show a connection. But there was nothing. Warsaw was the most likely link, but Jesse knew that he was reaching. Ingo had worked for eastern European political groups, but there were thousands of them. Only one or two would know that Jesse existed, and he hadn't heard a peep from them. If they were going to counter-sue or send mercenaries after someone at CUNY, they would have done so almost immediately. Attention was always in short supply in political circles, and the goons who did their dirty work had even shorter attention spans. It didn't jive.</p>
+<p>Sascha, for his part, was intrigued by the idea of sitting in on, and even being allowed to participate in, a criminal interrogation. What would they learn next week?  Maybe the guy would roll over on his bosses. Maybe he would give the FBI some dirt on few politicians in Europe. Maybe he would go on endlessly about his skills as a spy for hire. The odds of convincing him to do anything were poor. The NYPD could only drop hints and try to lead him in directions that might reveal something interesting. Herding cats would be easier by comparison.</p>
+<p>&quot;Yeah,&quot; Jesse said finally. &quot;Sorry, I'm just feeling dazed about it all. Great job putting us in touch with Forth, though. I feel like we're getting somewhere, even if I don't know where that is, or whether I'll like it. At the very least, I want to know who Ingo works for. That will tell us a lot. If it's someone we've squeezed, or someone who has us on their shit list, then we'll need to follow whatever leads he gives us. If it's not someone we need to worry about, then I guess it might make an interesting project for next year's junior class.&quot;</p>
+<p>Sascha smiled. &quot;Always thinking ahead,&quot; he said simply.</p>
+<p>&quot;Yeah,&quot; Jesse said, &quot;but apparently I don't think behind very well. We never would have gotten anywhere with this on our own.&quot;  He paused. &quot;I wish that there was some way that I could prepare myself for the questioning. Maybe we should sit down tomorrow and build a list of possible connections. All the reasons that he might have for watching us, and the people who might pay him to do it. I have a list of our projects on my laptop, and it would be easy to pull out all the ones that touched European countries.&quot;</p>
+<p>&quot;We'll definitely need to do that. Forth might also want us to be thinking of direct questions that we'd like to ask, even if nobody ever gets the chance. The more the interviewers know, the better. Those guys are very creative.&quot;</p>
+<p>&quot;Sascha, what if someone is after us?  What if this is an organized plot to watch us and then sabotage the program?  What if our students are at risk?&quot;</p>
+<p>&quot;Hey. It's a big job, and a dangerous one. The students know that. Their parents know it, too. But like you always say, democracy needs them to do it. That argument works, you know.&quot;</p>
+<p>Jesse grinned sidelong at Sascha and rolled his eyes. &quot;Jerk.&quot;</p>
+<p>They climbed the stairs to the east parking structure. Neither Jesse nor Sascha saw the woman with close-cropped black hair and frameless glasses walk by, glancing at her watch.</p>
+<p>—</p>
+<p>Jesse stepped out of his car, glad to be home. Some folks went home only when they had to. Maybe it was for dinner, or to sleep, or to catch up on the bills. To Jesse, his apartment had always been a sanctuary. Even though he enjoyed going to work most days, it was a blissful relief to come home to his ordered, clean unit on Blake Drive. He kept a simple lifestyle, not indulging in the latest expensive computer toy that many of his friends spent half of their paycheck on each month. He was a geek with a capital `G', but his interest was in learning and solving problems. Owning complicated gismos that drained precious hours from his day was something that he carefully avoided.</p>
+<p>It was a clear, cold night. Winter would be arriving soon, probably in the form of morning frost and afternoon flurries. Jesse heard someone shuffling along the sidewalk behind the covered parking spaces. He smiled and pulled his coat out of the backseat. His neighbors were always out and about. They made the neighborhood seem old fashioned. It was common to see groups of three or more residents milling around outside of an apartment, talking about the latest news or sharing cooking secrets. Jesse had chosen the right place to drop his anchor.</p>
+<p>Feeling warm despite the chill, Jesse closed the back door on his car, tucked his coat under his left arm, and started toward his front door. He glanced up at the night sky as he walked, admiring the small number of stars that managed to make themselves seen through the thick envelope of light pollution that hung in the air.</p>
+<p>As he reached the steps that led up to his door, Jesse fumbled for his keys. The blow came suddenly, from behind him, and Jesse knew only a flash of bright light before the night sky swallowed everything up.</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="chapter16.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                            <a rel="next" href="chapter18.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="chapter16.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                    <a rel="next" href="chapter18.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+        <script type="text/javascript">
+            window.playground_copyable = true;
+        </script>
+        <script src="elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="searcher.js" type="text/javascript" charset="utf-8"></script>
+        <script src="clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+    </body>
+</html>

@@ -1,0 +1,205 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js light">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Chapter 7 - Escape Velocity</title>
+        <!-- Custom HTML head -->
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="icon" href="favicon.svg">
+        <link rel="shortcut icon" href="favicon.png">
+        <link rel="stylesheet" href="css/variables.css">
+        <link rel="stylesheet" href="css/general.css">
+        <link rel="stylesheet" href="css/chrome.css">
+        <link rel="stylesheet" href="css/print.css" media="print">
+        <!-- Fonts -->
+        <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="fonts/fonts.css">
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+    </head>
+    <body>
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded "><a href="title.html"><strong aria-hidden="true">1.</strong> Escape Velocity</a></li><li class="chapter-item expanded "><a href="frontmatter.html"><strong aria-hidden="true">2.</strong> Front matter</a></li><li class="chapter-item expanded "><a href="chapter1.html"><strong aria-hidden="true">3.</strong> Chapter 1</a></li><li class="chapter-item expanded "><a href="chapter2.html"><strong aria-hidden="true">4.</strong> Chapter 2</a></li><li class="chapter-item expanded "><a href="chapter3.html"><strong aria-hidden="true">5.</strong> Chapter 3</a></li><li class="chapter-item expanded "><a href="chapter4.html"><strong aria-hidden="true">6.</strong> Chapter 4</a></li><li class="chapter-item expanded "><a href="chapter5.html"><strong aria-hidden="true">7.</strong> Chapter 5</a></li><li class="chapter-item expanded "><a href="chapter6.html"><strong aria-hidden="true">8.</strong> Chapter 6</a></li><li class="chapter-item expanded "><a href="chapter7.html" class="active"><strong aria-hidden="true">9.</strong> Chapter 7</a></li><li class="chapter-item expanded "><a href="chapter8.html"><strong aria-hidden="true">10.</strong> Chapter 8</a></li><li class="chapter-item expanded "><a href="chapter9.html"><strong aria-hidden="true">11.</strong> Chapter 9</a></li><li class="chapter-item expanded "><a href="chapter10.html"><strong aria-hidden="true">12.</strong> Chapter 10</a></li><li class="chapter-item expanded "><a href="chapter11.html"><strong aria-hidden="true">13.</strong> Chapter 11</a></li><li class="chapter-item expanded "><a href="chapter12.html"><strong aria-hidden="true">14.</strong> Chapter 12</a></li><li class="chapter-item expanded "><a href="chapter13.html"><strong aria-hidden="true">15.</strong> Chapter 13</a></li><li class="chapter-item expanded "><a href="chapter14.html"><strong aria-hidden="true">16.</strong> Chapter 14</a></li><li class="chapter-item expanded "><a href="chapter15.html"><strong aria-hidden="true">17.</strong> Chapter 15</a></li><li class="chapter-item expanded "><a href="chapter16.html"><strong aria-hidden="true">18.</strong> Chapter 16</a></li><li class="chapter-item expanded "><a href="chapter17.html"><strong aria-hidden="true">19.</strong> Chapter 17</a></li><li class="chapter-item expanded "><a href="chapter18.html"><strong aria-hidden="true">20.</strong> Chapter 18</a></li><li class="chapter-item expanded "><a href="chapter19.html"><strong aria-hidden="true">21.</strong> Chapter 19</a></li><li class="chapter-item expanded "><a href="chapter20.html"><strong aria-hidden="true">22.</strong> Chapter 20</a></li><li class="chapter-item expanded "><a href="chapter21.html"><strong aria-hidden="true">23.</strong> Chapter 21</a></li><li class="chapter-item expanded "><a href="chapter22.html"><strong aria-hidden="true">24.</strong> Chapter 22</a></li><li class="chapter-item expanded "><a href="chapter23.html"><strong aria-hidden="true">25.</strong> Chapter 23</a></li><li class="chapter-item expanded "><a href="chapter24.html"><strong aria-hidden="true">26.</strong> Chapter 24</a></li><li class="chapter-item expanded "><a href="chapter25.html"><strong aria-hidden="true">27.</strong> Chapter 25</a></li><li class="chapter-item expanded "><a href="chapter26.html"><strong aria-hidden="true">28.</strong> Chapter 26</a></li><li class="chapter-item expanded "><a href="chapter27.html"><strong aria-hidden="true">29.</strong> Chapter 27</a></li><li class="chapter-item expanded "><a href="chapter28.html"><strong aria-hidden="true">30.</strong> Chapter 28</a></li><li class="chapter-item expanded "><a href="chapter29.html"><strong aria-hidden="true">31.</strong> Chapter 29</a></li><li class="chapter-item expanded "><a href="chapter30.html"><strong aria-hidden="true">32.</strong> Chapter 30</a></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky bordered">
+                    <div class="left-buttons">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light (default)</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">Escape Velocity</h1>
+
+                    <div class="right-buttons">
+                        <a href="print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="chapter-7"><a class="header" href="#chapter-7">Chapter 7</a></h1>
+<p>Sascha closed the office door behind him and headed toward the north elevator. He jabbed the call button and took a moment to look out the window. Outside, a group of students clad in bright red and yellow shirts were playing a game of touch football. The sun was shining, giving the false impression that it was a balmy summer day. <em>Jesse is probably wishing that it were summer again</em>, Sascha thought. Could Jesse have been right?  He couldn't imagine that the university would try him again for something related to his trip to Poland, especially after the last trial. Espionage and destruction of property. Two loosely-defined but very serious charges for a young professional. Sascha knew that the university was capable of eating its own. That had always bothered him. Some schools had a superb legal posture and would go to bat for members of their communities to the greatest extent that they could. But not CUNY. When students got in trouble for sharing files on their computers, the university would forward the Cease and Desist notice directly to the student who was using the network address that was implicated in the document. This was poor form for the university, since a student could be falsely accused if someone happened to be the victim of a virus or worm, or if someone had used a weak password to protect his wireless network. Guilt, intent, and liability were very complex matters to sort out in a place as technologically dense and active as a university campus.</p>
+<p>In this case, though, Sascha thought that it was bad business for CUNY not to step up and defend Jesse. He had been cleared of wrongdoing in the Warsaw trial. It had become clear afterward that William Rheingold was motivated by political and personal concerns, and not because of any moral obligation. Jesse had dealt with many other concerns in the meantime, but Sascha hadn't heard any more gossip from the press or the ladies upstairs.</p>
+<p>The elevator arrived, and Sascha stepped in. He punched the button for the fifth floor. <em>Jesse will be in, and he needs to hear about this before the police come and start asking questions again</em>, Sascha thought. He heard the chime indicating arrival at the fifth floor, stepped out, and froze. The door to Jesse's unmarked office, which sounds an alarm if it remains open for more than one minute, stood ajar. The lights were off, an odd thing at 10:30 on a Monday morning.</p>
+<p>Sascha approached the office slowly, pulling his phone from his shirt pocket. He leaned to his right, looking around the door. He could only see the corner of the office, making him wish that the door had been reversed. Sascha had been a U.S. Marine before college, and his tactical disadvantage on this side of the door made him uncomfortable. Backing away and glancing at his phone, he dialed Jill's number.</p>
+<p>&quot;Jill Cumberland,&quot; the pleasant voice said.</p>
+<p>&quot;Jill, it's Sascha. Is there maintenance in 503B scheduled for today?&quot;</p>
+<p>&quot;503 bravo?&quot; she asked, sounding surprised. &quot;Isn't that the investigative journalism war room?&quot;</p>
+<p>&quot;Yeah,&quot; Sascha replied, glancing down the hallway. &quot;Anything on the grid?&quot;</p>
+<p>&quot;Two seconds here,&quot; Jill said. Sascha could hear her fingers working her keyboard. There was a long pause. Then she spoke again, this time with slight concern. &quot;This is odd, Sascha. There is nothing on the schedule, but someone added a ticket for 503B and then deleted it. Is everything all right?  Do you want me to call security?&quot;</p>
+<p>&quot;I'm not sure. Don't call security just yet. The door is ajar, and the lights are off. I'm going to have a look around and make sure that everything is kosher.&quot;</p>
+<p>&quot;All right. Be careful, Sascha. I'll send someone down there if I don't hear from you in a few minutes.&quot;</p>
+<p>&quot;Give me ten,&quot; Sascha said, and quietly flipped his phone closed. His pulse had quickened. The information that Jill had given him, though it probably seemed suspicous, would seem ultimately inconsequential to anyone else. To Sascha, though, the news was unwelcome. He knew the scheduling system very well, and he knew his building. Someone had scheduled maintenance for the room where Jesse normally worked, and someone—probably the same someone—had cancelled the service ticket. By itself, that could be attributed to a mistake by the person scheduling the ticket. With the door ajar on a secured office that was normally occupied during the day, the situation changed.</p>
+<p>The CUNY ticket scheduling system was complex once one looked behind the pleasant computer interface that the maintenance workers and administrative assistants used. It synchronized its database with servers that handled service requests for the university at large, enabling reassignment of jobs when one maintenance crew was overloaded, as well as distributing the work of creating tickets. Each building had to be inspected by the local fire chief at least once every three years, for example, and the university as a whole had to be fully reinspected every five years. Requiring the staff of each building to coordinate with the fire chief would be time consuming for all parties, and so the administrative staff for CUNY negotiated the inspections for the entire campus.</p>
+<p>Like most useful digital tools, the scheduling system cut both ways. The flexibility and division of labor that was won by using distributed ticket creation also meant that tracking an errant ticket was nearly impossible. There were hundreds of workstations across the campus, and many faculty and staff left their computers turned on and signed in when they left for the day. The two minutes of waiting that they saved each morning left many sensitive resources at the mercy of anyone who didn't mind picking a lock, breaking a window, or scaling the wall of a building. The deleted ticket would include the name of the person whose computer was used to create it, but that might be useless for tracking the real identity of the person at the keyboard.</p>
+<p>There was one other thing on Sascha's mind as he slipped the phone back into his pocket. The ticket scheduling system was designed to interface with the door security system. This was a convenience feature for maintenance workers who would become annoyed when the office that filed a maintenance ticket was protected by an elaborate security system that would reliably go off during their visit, leading to an automatic call to the police. In order to save the university a few thousand dollars in police fines and lost productivity, the board of directors voted narrowly to install an override system and, regrettably, to give the scheduling system the ability to trigger it.</p>
+<p>The political details of the override aside—it had been a very messy, heated discussion on campus—there was also the not-so-small matter of a bug in the ticket scheduling system. CUNY had hired a private software firm to develop the software for the system. When it was decided that the scheduling system should interface with the door security system, the same firm had made the changes. But since the change was made as an afterthought, five years after the software was developed, it was difficult for anyone to recall the details of its design. There were small details that were neglected, and periodically a consequence of those details would crop up. For their part, the software firm had been helpful in troubleshooting and resolving difficulties as they arose. This one, however, had gone unresolved for months.</p>
+<p>When a new maintenance ticket was created, the ticket system sent a secure message to the door security system that marked a room, floor, or building as a maintenance zone for a period of time -- normally the length of time specified on the ticket. When the ticket expired, security was restored to its normal operation. About a year before, however, Sascha had noticed a glitch. After hours on a Thursday night, he had gone to the second floor to pull a file on a student who was under investigation for fabricating evidence for a research project. This involved going into the records vault, which is a large space that is normally well-protected by security cameras, doors with card-key access and retinal scanners, and black-out times when the doors would not open. On this Thursday night, Sascha found the door unlocked. After calling security and waiting for an agent to arrive, he checked the vault and verified that everything was in order. It didn't appear that anyone had been in the room that night.</p>
+<p>After saying good night to the security detail, Sascha had gone back to his office to check the ticket system. Maybe someone scheduled maintenance and forgotten to follow through, or maybe it was scheduled for the wrong room. When Sascha pulled up the ticket system and checked the record for the vault, his blood ran cold. There had been a ticket created for the vault so that a technician could install an upgraded ethernet switch as part of a campus-wide migration to a faster network architecture. The next line in the record, though, showed that the ticket had been deleted several days later -- 2:18 p.m. on the same day that Sascha had gone to the vault. The reason given for the deletion appeared to be that the technician had called in sick, and there was no one else available to do the work. <em>If the ticket gets cancelled, the door security system still opens the room</em>, Sascha had thought, his mind reeling at the thought. <em>This is almost as bad as the power to the raptor cages going out in Jurassic Park</em>....</p>
+<p>When Jill told him that the schedule showed a ticket that was created and immediately deleted, Sascha felt his heart start to hammer. Seeing the door ajar was enough to activate his old Marine instincts. Having backed away from the door to make his call, he now crept back toward it, a small canister of pepper spray in his left hand. The only sound coming from the room as he moved silently along the wall was a rhythmic rustling of paper and the sound of an old dot-matrix printer. Sascha reached the door and began slicing the pie, an old technique that he had perfected in basic training. When a team of Marines needed to silently clear a room, they began with one man on each side of the door, guns drawn and shouldered. This gave each man a sliver of the room to examine. Next, they would turn slowly away from one another, increasing the portion of the room that they could see. When the entire room had been examined from this position, they would signal to their comrades that it was safe to proceed. Today, though, Sascha had to rely on his intuition. The wall gave him an advantage and a disadvantage. The bulk of the office would be to his right, making it easy to slice the pie. However, he would need to open the door in order to see the room. If its hinges squeaked, he would be partially exposed, and the walls were not designed to stop or deflect gunfire. <em>It's just an office</em>, he reminded himself. <em>This is a university in the U.S. of A</em>. With his right foot resting against the door frame, Sascha peered around the edge of the door. There was an empty desk against the wall on his left, and a bookshelf on the far wall. Above the desk was a steel matrix of time cards and pamphlets. In the corner was a black, non-descript waste bin.</p>
+<p>Sascha took a deep but quiet breath and tugged on the door. It was a heavy door, but it gave way slightly at Sascha's touch. No squeaks. He still couldn't fit his body between the door and its frame, but pulling it open had given him a better view of the room. It was much narrower and deeper than he expected. There was another desk on the right wall, and there appeared to be a stack of dark coats draped over the office chair next to it. Near the back of the chamber, Sascha saw a computer workstation with four monitors attached to it. The computer was running, its screens aglow, but no one was using it. <em>Odd</em>, Sascha thought and he scanned the room for movement.</p>
+<p>Seeing nothing suspicious or out of place, Sascha opened the door enough that he could slip into the room. When he did, he stopped short. What he thought was a pile of coats was now clearly a man, and he was slumped over onto the desk in front of him. Sascha approached closely, not immediately recognizing the man. There was no sign of a struggle. As Sascha reached out to put his hand on the man's shoulder, the dark mass inhaled sharply and sat up, turning his head toward Sascha. Instinct taking over once again, Sascha backpedalled, raising his pepper spray into his line of vision. &quot;Who are you?&quot; he ordered.</p>
+<p>The man stared at him, clearly confused. The low light on the room made him appear pale and green, almost alien-like. &quot;Sascha?&quot; the man said, his voice rough from sleep.</p>
+<p>Sascha found a light switch beside him and flipped it on, his pepper spray still aimed at the other man. As the lights came on and his senses sharpened, Sascha dropped his pepper spray and rushed forward. &quot;Jesse. Are you all right?  Did someone break in?&quot;</p>
+<p>&quot;Are you kidding?  I was taking a nap, man. I've worked three nights straight. Are <em>you</em> all right?  You look fit to kill.&quot;</p>
+<p>Sascha exhaled, allowing himself a nervous chuckle. &quot;Boy, Jesse, do I have a story to tell you. First, though, I'm going to lock the door.&quot;</p>
+<p>Jesse frowned, looking past Sascha at the heavy steel door that stood open. He rubbed his eyes, his brain not up to speed just yet. &quot;It was already locked. It's always locked.&quot;</p>
+<p>&quot;Not this time. I think I know why, too. Grab your coat. Let's take a quick walk.&quot;</p>
+<p>Sascha pulled out his phone, dialled, and told Jill that everything was cool, at least for now. Then he walked over to the computer terminal, loaded the program that controlled the security for the room, and pushed <code>RESET</code>. Immediately, he heard a click and a dull thud from the far end of the office as the door lock engaged.</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="chapter6.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                            <a rel="next" href="chapter8.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="chapter6.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                    <a rel="next" href="chapter8.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+        <script type="text/javascript">
+            window.playground_copyable = true;
+        </script>
+        <script src="elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="searcher.js" type="text/javascript" charset="utf-8"></script>
+        <script src="clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+    </body>
+</html>
