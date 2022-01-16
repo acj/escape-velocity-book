@@ -44,7 +44,7 @@ The Ombudsman cleared his throat. "All right, then. Mr. Winter, this is Mr. John
 
 Shelby stood up, absently adjusting his tie. "Thank you, sir."  He picked up the piece of paper at the top of his stack and propped his reading glasses on the end of his nose. "Mr. Winter, these are the charges. You are accused of destroying university property on two occasions. The first occurred on July 28th of this year. The university-owned materials in question were the records of a student who is enrolled in the investigative journalism program and conducted a study in Venezuela. The second incident occurred on August 4th, also of this year, and involved a set of computer backups that contained the only remaining copy of the student's records after the hard copies were destroyed. You are also accused of espionage with the intent to disclose university documents to foreign entities stemming from your involvement in an investigation of a student doing research in St. Petersburg, Russia."
 
-If Jesse's face reflected the state of his mind, then he had a look of disbelief on his face, and his right eyebrow was raised. "This is complete rubbish, Mr. Shelby" he said flatly. "What's the evidence?"
+If Jesse's face reflected the state of his mind, then he had a look of disbelief on his face, and his right eyebrow was raised. "This is complete nonsense, Mr. Shelby" he said flatly. "What's the evidence?"
 
 The lawyer smirked, considering Jesse for a moment before he spoke. "It's more than enough to convict, Mr. Winter. And with a mouth like that, you can be glad that we're not at trial."
 

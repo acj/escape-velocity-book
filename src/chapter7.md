@@ -12,7 +12,7 @@ Sascha approached the office slowly, pulling his phone from his shirt pocket. He
 
 "Jill, it's Sascha. Is there maintenance in 503B scheduled for today?"
 
-"503 beta?" she asked, sounding surprised. "Isn't that the investigative journalism war room?"
+"503 bravo?" she asked, sounding surprised. "Isn't that the investigative journalism war room?"
 
 "Yeah," Sascha replied, glancing down the hallway. "Anything on the grid?"
 
