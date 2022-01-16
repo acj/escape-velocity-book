@@ -1,0 +1,5 @@
+# Chapter 28
+
+In the tinted van, Sascha felt himself begin to sweat. One of the men in the van had just gotten a text message, and it had been more than ten minutes since Jesse left. He knew that Jesse was still alive, but it was impossible to know what was happening. If Jesse had managed to get into the vault, then he would be trying to buy some time. The building would start filling up within thirty minutes, and a group of armed men in the vault would look highly suspicious. But Jenna would know that, too.
+
+Off in the distance, a police car pulled alongside the Sheckell building. Aware that the men were watching him, Sascha pretended to look stretch his frame and look around. He did his best to look bored. A tall uniformed officer got out of the patrol car, and two men dressed in black shirts and black jeans emerged from the back seat. They conversed for a moment, and then the two men in jeans walked toward a side entrance to the building. They had purpose in their movement, and for a moment Sascha felt hopeful. If he couldn't be there for Jesse, then maybe they could get him out of this jam.
